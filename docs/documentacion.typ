@@ -10,7 +10,7 @@
 
 // --- PORTADA ---
 #align(center + horizon)[
-  #image("puj-logo.png", width: 30%)
+  #image("/images/puj-logo.png", width: 30%)
   #v(1cm)
   
   #text(size: 14pt, weight: "bold")[PONTIFICIA UNIVERSIDAD JAVERIANA] \
@@ -40,3 +40,64 @@
 ]
 
 #pagebreak() 
+
+
+= Introducción
+
+// TODO: 2-3 líneas describiendo qué es el sistema y el alcance de esta entrega
+// (arquitectura base, solo consulta y reserva, sin tolerancia a fallas)
+
+= Modelos del Sistema
+
+== Modelo Físico/Arquitectónico
+
+// TODO: Explicar cómo está distribuido las partes físicas del sistema (los dispositivos)
+
+== Modelo de Interacción
+
+// TODO: Explicar los estilos de cada interacción según su operación
+
+== Modelo de Fallos
+
+// TODO: Explicar cómo se aplicará el modelo a fallas 
+
+== Modelo de Seguridad
+
+// TODO: Explicar 3 coneptos, Confidencialidad, Integridad y Autenticación/Autorización
+
+= Diseño del Sistema
+
+== Diagrama de Despliegue
+
+// TODO: Diagrama de despliegue
+
+== Diagrama de Componentes
+
+// TODO: Diagrama de componentes
+
+== Diagrama de Clases
+
+// TODO: Diagrama de clases
+
+== Diagrama de Secuencia
+
+// TODO: Diagrama de secuencia
+
+= Arquitectura Escalable y Tolerante a Fallos
+
+// TODO: párrafo descriptivo sobre qué componentes se agregarán
+// en la Entrega 2 para escalabilidad y tolerancia a fallas
+// (ej. réplicas de RMC, réplica de BD, heartbeat/failover)
+
+= Protocolo de Pruebas
+
+// TODO: tipos de prueba a realizar (funcionales, de carga, de concurrencia)
+
+= Obtención de Métricas de Desempeño
+
+// TODO: cómo se medirán tiempo de respuesta y TPM
+// (instrumentación en código, librería, herramienta externa — nombrarla)
+
+= Generación de Carga
+
+// TODO: cómo los clientes generan las solicitudes parametrizables
