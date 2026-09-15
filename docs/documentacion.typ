@@ -50,9 +50,28 @@ Para la primera entrega, se requieren las operaciones síncronas de consulta de 
 
 = Modelos del Sistema
 
-== Modelo Físico/Arquitectónico
+== Modelo Físico
 
-// TODO: Explicar cómo está distribuido las partes físicas del sistema (los dispositivos)
+El sistema corre en 3 máquinas distintasm una por cada arquitectura:
+
+- *Nodo 1* (_PC personal Samuel Montaña_): Se encarga de ejecutar los procesos cliente, ya que son los que generan las solicitudes de consulta, reserva y cancelación.
+- *Nodo 2* (_PC personal Elier Ibarra_): Se encarga de ejecutar los 3 servicios de la capa de negocio, el gestor de transacciones, el servicio RMC y el gestor de cancelaciones
+- *Nodo 3* (_Celular o PC adional-MV_): Se encarga de ejecutar el servicio de persistencia, encargado de guardar y consultar los datos
+
+Como estos dispositivos no están en la misma red física, se usa Tailscale para crear una red privada virtual que les asigna direcciones IP fijas y los conecta entre sí sin importar dónde estén conectados. Cada servicio tiene un puierto fijo asignado, de tal forma que la comunicación sea siempre predecible. A continuación se muestra en la tabla los componentes del software y sus puertos de comunicación:
+
+#table(
+  columns: 3,
+  align: left,
+  [*Componente*], [*Nodo*], [*Puerto*],
+  [Procesos Cliente], [Nodo 1], [(se conecta al puerto 9900 del Nodo 2)],
+  [Gestor de Transacciones (canal síncrono)], [Nodo 2], [9900],
+  [Gestor de Transacciones (canal asíncrono)], [Nodo 2], [9901],
+  [Servicio RMC], [Nodo 2], [9902],
+  [Servicio de Cancelaciones y Notificaciones], [Nodo 2], [9903],
+  [Servicio de Persistencia], [Nodo 3], [9904],
+)
+
 
 == Modelo de Interacción
 
