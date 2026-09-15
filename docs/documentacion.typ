@@ -44,8 +44,9 @@
 
 = Introducción
 
-// TODO: 2-3 líneas describiendo qué es el sistema y el alcance de esta entrega
-// (arquitectura base, solo consulta y reserva, sin tolerancia a fallas)
+El Sistema Reserva de Boletos es una aplicación distribuida que permite a los estudiantes de la universidad consultar eventos culturales y deportivos disponibles en un mes determinado, reservar puestos y modificar sus reservas cambiando el número de puestos o la fecha si el evento ocurre en el mismo mes. El diseño está implementado en 3 capas, Clientes, Lógica de negocio y de Almacenamiento, distribuidas en 3 nodos donde su comunicación es por medio de una librería llamada ZeroMQ, combinando la sincronía para consultas y reservas y, la asíncronía para cancelaciones.
+
+Para la primera entrega, se requieren las operaciones síncronas de consulta de eventos y reserva de puestos funcionando de extremo a extremo entre las 3 capas. El diseño completo de la arquitectura mediante los 4 modelos de sistema y los diagramas de UML. Y por último, la definición del protocolo de pruebas, la estratgia de recolección de métricas y el mecanismo de generación de carga para la evaluación de desempeño.
 
 = Modelos del Sistema
 
