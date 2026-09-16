@@ -85,7 +85,7 @@ Para poder determinar si un componente falló, se usa un tiempo límite de esper
 
 == Modelo de Seguridad
 
-// TODO: Explicar 3 coneptos, Confidencialidad, Integridad y Autenticación/Autorización
+El sistema para esta primera entrega, no incluye mecanismos de seguridad avanzados, pero hay que recalcar los riesgos que son existentes. Los mensajes que viajan entre los servicios no van cifrados por ZeroMQ, pero al usar Tailscale, si quedan protegidos mientras viajan por la red, ya que esta cifra el tráfico automáticamente. También cualquier proceso conectado a la red Tailscale del equipo podría enviar solicitudes al sistema, ya que no hay ningina verificación de identidad de quién está haciendo la solicitud. Y por último, no se valida que los mensajes lleguen sin ser alterados, más allá de la protección que ya da la red. Estos mecanismos se aceptan dado que el etorno de pruebas es controlado. Como posible mejora futura, se podría agregar el mecanismo de CURVE de ZeroMQ para agregar autenticación de clientes y cifrado adicional.
 
 = Diseño del Sistema
 
