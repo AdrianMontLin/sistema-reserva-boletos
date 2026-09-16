@@ -79,7 +79,9 @@ Las operarciones de el sistema se componen de dos formas dependiendo de cómo el
 
 == Modelo de Fallos
 
-// TODO: Explicar cómo se aplicará el modelo a fallas 
+El sistema se encarga de que si un componente falla, solo deja de responder, no se considera que un componente responda con información correcta o dañada intencionalmente. El Gestor de Transacciones y el servicio RMC, son los puntos donde puede ocurrir una falla, ya que estos son los responsables del flujo principal de la consulta y la reserva.
+
+Para poder determinar si un componente falló, se usa un tiempo límite de espera. Si un proceso no recibe respuesta dentro de un lapso de tiempo razonable, asume que el otro extremo falló. También se considera la posibilidad de que un mensaje se pierda en el camino debido a la red, como puede ser una interrumpción temporal de la conexión, lo cual es distinto a que el proceso realmente haya fallado.  
 
 == Modelo de Seguridad
 
