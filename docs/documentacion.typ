@@ -52,11 +52,11 @@ Para la primera entrega, se requieren las operaciones síncronas de consulta de 
 
 == Modelo Físico
 
-El sistema corre en 3 máquinas distintasm una por cada arquitectura:
+El sistema corre en 3 máquinas distintas una por cada arquitectura:
 
 - *Nodo 1* (_PC personal Samuel Montaña_): Se encarga de ejecutar los procesos cliente, ya que son los que generan las solicitudes de consulta, reserva y cancelación.
-- *Nodo 2* (_PC personal Elier Ibarra_): Se encarga de ejecutar los 3 servicios de la capa de negocio, el gestor de transacciones, el servicio RMC y el gestor de cancelaciones
-- *Nodo 3* (_Celular o PC adional-MV_): Se encarga de ejecutar el servicio de persistencia, encargado de guardar y consultar los datos
+- *Nodo 2* (_PC personal Elier Ibarra_): Se encarga de ejecutar los 3 servicios de la capa de negocio, el gestor de transacciones, el servicio RMC y el gestor de cancelaciones.
+- *Nodo 3* (_Celular o PC adional-MV_): Se encarga de ejecutar el servicio de persistencia, encargado de guardar y consultar los datos.
 
 Como estos dispositivos no están en la misma red física, se usa Tailscale para crear una red privada virtual que les asigna direcciones IP fijas y los conecta entre sí sin importar dónde estén conectados. Cada servicio tiene un puierto fijo asignado, de tal forma que la comunicación sea siempre predecible. A continuación se muestra en la tabla los componentes del software y sus puertos de comunicación:
 
@@ -75,7 +75,7 @@ Como estos dispositivos no están en la misma red física, se usa Tailscale para
 
 == Modelo de Interacción
 
-// TODO: Explicar los estilos de cada interacción según su operación
+Las operarciones de el sistema se componen de dos formas dependiendo de cómo el cliente espera la respuesta. Las Operaciones Síncronas, que hacen referencia a la consultoría de eventos, reserva de puestos y modificación de una reserva. El cliente envía una solicitud y se queda en espera hasta que reciba una respuesta antes de continuar. Acá se implementa el patrón REQ/REP de ZeroMQ, en el cliente y el gestor de transacciones, y como en el gestor de transacciones y el servicio RMC. Y las Operaciones Asíncronas, que hacen referencia a la cancelación de una reserva. El cliente envía una solicitud y recibe de manera inmediata una confirmación de que fue recibida, sin tener que esperar que la cancelación se complete, cuando la cancelación finalmente se procesa en la base de datos, el sistema le avisa al cliente por separado mediante una notificación. Acá se implementa con DEALER/ROUTER para que el cliente no se bloquee al enviar la cancelación, y con PUB/SUB para el envío de la notificación.
 
 == Modelo de Fallos
 
