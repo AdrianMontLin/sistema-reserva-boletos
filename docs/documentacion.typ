@@ -89,21 +89,37 @@ El sistema para esta primera entrega, no incluye mecanismos de seguridad avanzad
 
 = Diseño del Sistema
 
-== Diagrama de Despliegue
+A continuación se presentan los modelos estructurales y de comportamiento del sistema:
 
-// TODO: Diagrama de despliegue
+#align(center)[
+  #grid(
+    columns: (1fr, 1fr),
+    gutter: 2em,        
+    row-gutter: 2.5em,  
+    
+    align(center)[
+      #image("images/despliegue.png", width: 95%)
+      #v(0.5em)
+      *Diagrama de Despliegue*
+    ],
+    align(center)[
+      #image("images/componentes.png", width: 95%)
+      #v(0.5em)
+      *Diagrama de Componentes*
+    ],
+    align(center)[
+      #image("images/clases.png", width: 90%)
+      #v(0.5em)
+      *Diagrama de Clases*
+    ],
+    align(center)[
+      #image("images/secuencia.png", width: 95%)
+      #v(0.5em)
+      *Diagrama de Secuencia*
+    ]
+  )
+]
 
-== Diagrama de Componentes
-
-// TODO: Diagrama de componentes
-
-== Diagrama de Clases
-
-// TODO: Diagrama de clases
-
-== Diagrama de Secuencia
-
-// TODO: Diagrama de secuencia
 
 = Arquitectura Escalable y Tolerante a Fallos
 

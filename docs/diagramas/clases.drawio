@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Clases" id="clases1">
+    <mxGraphModel dx="1414" dy="757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="evento" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Evento" vertex="1">
+          <mxGeometry height="104" width="200" x="500" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="evento_1" parent="evento" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ ID: string" vertex="1">
+          <mxGeometry height="26" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="evento_2" parent="evento" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ Nombre: string" vertex="1">
+          <mxGeometry height="26" width="200" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="evento_3" parent="evento" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ Ocurrencias: []Ocurrencia" vertex="1">
+          <mxGeometry height="26" width="200" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="ocurrencia" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Ocurrencia" vertex="1">
+          <mxGeometry height="130" width="220" x="490" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="ocurrencia_1" parent="ocurrencia" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ Fecha: string" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ocurrencia_2" parent="ocurrencia" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ AsientosTotales: int" vertex="1">
+          <mxGeometry height="26" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="ocurrencia_3" parent="ocurrencia" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ AsientosLibres: int" vertex="1">
+          <mxGeometry height="26" width="220" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="ocurrencia_4" parent="ocurrencia" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ AsientosOcupados: int" vertex="1">
+          <mxGeometry height="26" width="220" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="reserva" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Reserva" vertex="1">
+          <mxGeometry height="104" width="220" x="130" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="reserva_1" parent="reserva" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ ID: string" vertex="1">
+          <mxGeometry height="26" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="reserva_2" parent="reserva" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ NumAsientos: int" vertex="1">
+          <mxGeometry height="26" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="reserva_3" parent="reserva" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ Estado: string" vertex="1">
+          <mxGeometry height="26" width="220" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;marginBottom=0;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;" value="Cliente" vertex="1">
+          <mxGeometry height="78" width="200" x="140" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente_1" parent="cliente" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ ID: string" vertex="1">
+          <mxGeometry height="26" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente_2" parent="cliente" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;fontSize=12;" value="+ Nombre: string" vertex="1">
+          <mxGeometry height="26" width="200" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="evento" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=diamondThin;startArrow=none;" target="ocurrencia" value="1 ... *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="ocurrencia" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;startArrow=none;" target="reserva" value="1 ... *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" edge="1" parent="1" source="cliente" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;startArrow=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="reserva" value="1 ...&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;*&lt;/span&gt;">
+          <mxGeometry relative="1" x="-0.1583" y="13" as="geometry">
+            <mxPoint x="-2" y="-8" as="offset" />
+            <Array as="points">
+              <mxPoint x="240" y="270" />
+              <mxPoint x="240" y="270" />
+            </Array>
+            <mxPoint x="29" y="438" as="sourcePoint" />
+            <mxPoint x="129" y="436" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
