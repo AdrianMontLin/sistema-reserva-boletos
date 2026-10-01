@@ -52,13 +52,22 @@ Para la primera entrega, se requieren las operaciones síncronas de consulta de 
 
 == Modelo Físico
 
-El sistema corre en 3 máquinas distintas una por cada arquitectura:
 
-- *Nodo 1* (_PC personal Samuel Montaña_): Se encarga de ejecutar los procesos cliente, ya que son los que generan las solicitudes de consulta, reserva y cancelación.
-- *Nodo 2* (_PC personal Elier Ibarra_): Se encarga de ejecutar los 3 servicios de la capa de negocio, el gestor de transacciones, el servicio RMC y el gestor de cancelaciones.
-- *Nodo 3* (_Celular o PC adional-MV_): Se encarga de ejecutar el servicio de persistencia, encargado de guardar y consultar los datos.
+#align(center)[
+  #image("/images/despliegue.png", width: 85%)
+  #v(0.3em)
+  *Diagrama de Despliegue*
+]
 
-Como estos dispositivos no están en la misma red física, se usa Tailscale para crear una red privada virtual que les asigna direcciones IP fijas y los conecta entre sí sin importar dónde estén conectados. Cada servicio tiene un puierto fijo asignado, de tal forma que la comunicación sea siempre predecible. A continuación se muestra en la tabla los componentes del software y sus puertos de comunicación:
+El sistema se implementa en el lenguaje de programación Go (versión 1.27.1), utilizando la librería ZeroMQ para Go `go-zeromq/zmq4` (versión 0.17.0), elegida por su soporte nativo de concurrencia mediante _goroutines_ . Esto es importante, ya que para que el Gestor de Transacciones atienda múltiples solicitudes de forma eficiente. Su rendimiento como lenguaje compilado, es relevante para las métricas de desempeño evaluadas en este proyecto y por ser una implementación pura en Go, sin dependencias externas de C, lo que simplifica el despliegue en los tres nodos.
+
+Como muestra el diagrama de despliegue, el sistema corre en 3 máquinas distintas, una por cada capa de la arquitectura:
+
+- *Nodo 1* (Marca: Lenovo |Modelo: ThinkPad E16 Gen2 |SO: Linux |Distro: Mint 22.3 |RAM: 16Gb |Espacio: 512Gb): Se encarga de ejecutar los procesos cliente, ya que son los que generan las solicitudes de consulta, reserva y cancelación.
+- *Nodo 2* (Marca: Dell |Modelo: XPS 13 9310 |SO: Linux |Distro: Mint 22.1 |RAM: 15Gb |Espacio: 229Gb): Se encarga de ejecutar los 3 servicios de la capa de negocio, el gestor de transacciones, el servicio RMC y el gestor de cancelaciones.
+- *Nodo 3* (Marca: Google |Modelo: Pixel 9a |SO: Android 17 |Distro: Android |RAM: 8Gb |Espacio: 128Gb): Se encarga de ejecutar el servicio de persistencia, encargado de guardar y consultar los datos.
+
+Como estos dispositivos no están en la misma red física, se usa *Tailscale* para crear una red privada virtual que les asigna direcciones IP fijas y los conecta entre sí sin importar dónde estén conectados. Cada servicio tiene un puerto fijo asignado, de tal forma que la comunicación sea siempre predecible. A continuación se muestra en la tabla los componentes del software y sus puertos de comunicación:
 
 #table(
   columns: 3,
