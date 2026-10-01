@@ -46,7 +46,7 @@
 
 El Sistema Reserva de Boletos es una aplicación distribuida que permite a los estudiantes de la universidad consultar eventos culturales y deportivos disponibles en un mes determinado, reservar puestos y modificar sus reservas cambiando el número de puestos o la fecha si el evento ocurre en el mismo mes. El diseño está implementado en 3 capas, Clientes, Lógica de negocio y de Almacenamiento, distribuidas en 3 nodos donde su comunicación es por medio de una librería llamada ZeroMQ, combinando la sincronía para consultas y reservas y, la asíncronía para cancelaciones.
 
-Para la primera entrega, se requieren las operaciones síncronas de consulta de eventos y reserva de puestos funcionando de extremo a extremo entre las 3 capas. El diseño completo de la arquitectura mediante los 4 modelos de sistema y los diagramas de UML. Y por último, la definición del protocolo de pruebas, la estratgia de recolección de métricas y el mecanismo de generación de carga para la evaluación de desempeño.
+Para la primera entrega, se requieren las operaciones síncronas de consulta de eventos y reserva de puestos funcionando de extremo a extremo entre las 3 capas. El diseño completo de la arquitectura mediante los 4 modelos de sistema y los diagramas de UML. Y por último, la definición del protocolo de pruebas, la estrategia de recolección de métricas y el mecanismo de generación de carga para la evaluación de desempeño.
 
 = Modelos del Sistema
 
@@ -63,9 +63,9 @@ El sistema se implementa en el lenguaje de programación Go (versión 1.27.1), u
 
 Como muestra el diagrama de despliegue, el sistema corre en 3 máquinas distintas, una por cada capa de la arquitectura:
 
-- *Nodo 1* (Marca: Lenovo |Modelo: ThinkPad E16 Gen2 |SO: Linux |Distro: Mint 22.3 |RAM: 16Gb |Espacio: 512Gb): Se encarga de ejecutar los procesos cliente, ya que son los que generan las solicitudes de consulta, reserva y cancelación.
-- *Nodo 2* (Marca: Dell |Modelo: XPS 13 9310 |SO: Linux |Distro: Mint 22.1 |RAM: 15Gb |Espacio: 229Gb): Se encarga de ejecutar los 3 servicios de la capa de negocio, el gestor de transacciones, el servicio RMC y el gestor de cancelaciones.
-- *Nodo 3* (Marca: Google |Modelo: Pixel 9a |SO: Android 17 |Distro: Android |RAM: 8Gb |Espacio: 128Gb): Se encarga de ejecutar el servicio de persistencia, encargado de guardar y consultar los datos.
+- *Nodo 1* (Marca: Lenovo |Modelo: ThinkPad E16 Gen2 |SO: Linux |Distro: Mint 22.3 |RAM: 16GB |Espacio: 512GB): Se encarga de ejecutar los procesos cliente, ya que son los que generan las solicitudes de consulta, reserva y cancelación.
+- *Nodo 2* (Marca: Dell |Modelo: XPS 13 9310 |SO: Linux |Distro: Mint 22.1 |RAM: 15GB |Espacio: 229GB): Se encarga de ejecutar los 3 servicios de la capa de negocio, el gestor de transacciones, el servicio RMC y el gestor de cancelaciones.
+- *Nodo 3* (Marca: Google |Modelo: Pixel 9a |SO: Android 17 |Distro: Android |RAM: 8GB |Espacio: 128GB): Se encarga de ejecutar el servicio de persistencia, encargado de guardar y consultar los datos.
 
 Como estos dispositivos no están en la misma red física, se usa *Tailscale* para crear una red privada virtual que les asigna direcciones IP fijas y los conecta entre sí sin importar dónde estén conectados. Cada servicio tiene un puerto fijo asignado, de tal forma que la comunicación sea siempre predecible. A continuación se muestra en la tabla los componentes del software y sus puertos de comunicación:
 
@@ -100,41 +100,47 @@ Se asume un modelo de tiempo asíncrono: no hay garantías estrictas de límites
 
 == Modelo de Fallos
 
-El sistema se encarga de que si un componente falla, solo deja de responder, no se considera que un componente responda con información correcta o dañada intencionalmente. El Gestor de Transacciones y el servicio RMC, son los puntos donde puede ocurrir una falla, ya que estos son los responsables del flujo principal de la consulta y la reserva.
+#align(center)[
+  #image("/images/fallos.png", width: 85%)
+  #v(0.3em)
+  *Diagrama del Modelo de Fallos*
+]
 
-Para poder determinar si un componente falló, se usa un tiempo límite de espera. Si un proceso no recibe respuesta dentro de un lapso de tiempo razonable, asume que el otro extremo falló. También se considera la posibilidad de que un mensaje se pierda en el camino debido a la red, como puede ser una interrumpción temporal de la conexión, lo cual es distinto a que el proceso realmente haya fallado.  
+Como se observa en el diagrama, el sistema adopta un modelo de fallas por caída (_crash-stop_): si un componente falla, simplemente deja de responder, no se considera que responda con información incorrecta o dañada intencionalmente. El Gestor de Transacciones y el servicio RMC son los puntos donde puede ocurrir una falla, ya que son los responsables del flujo principal de consulta y reserva.
+
+Para determinar si un componente falló, se usa un tiempo límite de espera (_timeout_): si un proceso no recibe respuesta dentro de un lapso de tiempo razonable, asume que el otro extremo falló. También se considera la posibilidad de que un mensaje se pierda en el camino debido a la red. Por ejemplo, una interrupción temporal de la conexión Tailscale, lo cual es distinto a que el proceso realmente haya fallado.  
 
 == Modelo de Seguridad
 
-El sistema para esta primera entrega, no incluye mecanismos de seguridad avanzados, pero hay que recalcar los riesgos que son existentes. Los mensajes que viajan entre los servicios no van cifrados por ZeroMQ, pero al usar Tailscale, si quedan protegidos mientras viajan por la red, ya que esta cifra el tráfico automáticamente. También cualquier proceso conectado a la red Tailscale del equipo podría enviar solicitudes al sistema, ya que no hay ningina verificación de identidad de quién está haciendo la solicitud. Y por último, no se valida que los mensajes lleguen sin ser alterados, más allá de la protección que ya da la red. Estos mecanismos se aceptan dado que el etorno de pruebas es controlado. Como posible mejora futura, se podría agregar el mecanismo de CURVE de ZeroMQ para agregar autenticación de clientes y cifrado adicional.
+#align(center)[
+  #image("/images/seguridad.png", width: 85%)
+  #v(0.3em)
+  *Diagrama del Modelo de Seguridad*
+]
+
+El diagrama ilustra el perímetro de confianza del sistema: los tres nodos se comunican dentro de un túnel cifrado creado por Tailscale (WireGuard), y cualquier dispositivo sin acceso a esa red no puede alcanzar el sistema.
+
+Para esta primera entrega no se incluyen mecanismos de seguridad avanzados a nivel de aplicación, pero se identifican los riesgos existentes. Los mensajes que viajan entre los servicios no van cifrados por ZeroMQ en sí, pero al usar Tailscale, sí quedan protegidos mientras viajan por la red, ya que esta cifra el tráfico automáticamente. Sin embargo, cualquier proceso conectado a la red Tailscale del equipo podría enviar solicitudes al sistema, ya que no hay ninguna verificación de identidad de quién está haciendo la solicitud. Tampoco se valida que los mensajes lleguen sin ser alterados, más allá de la protección que ya da la red.
+
+Estos riesgos se aceptan conscientemente dado que el entorno de pruebas es controlado (solo los integrantes del equipo tienen acceso a la red Tailscale del proyecto). Como mejora futura, se podría agregar el mecanismo CURVE de ZeroMQ para autenticación de clientes y cifrado adicional a nivel de aplicación.
 
 = Diseño del Sistema
 
-A continuación se presentan los modelos estructurales y de comportamiento del sistema:
+Además de los diagramas ya presentados junto a cada modelo (Despliegue, Componentes, Fallos y Seguridad), se completan los artefactos de diseño exigidos con el modelo de datos y el flujo de una operación síncrona:
 
 #align(center)[
   #grid(
     columns: (1fr, 1fr),
-    gutter: 2em,        
-    row-gutter: 2.5em,  
-    
+    gutter: 2em,
+    row-gutter: 2.5em,
+
     align(center)[
-      #image("images/despliegue.png", width: 95%)
-      #v(0.5em)
-      *Diagrama de Despliegue*
-    ],
-    align(center)[
-      #image("images/componentes.png", width: 95%)
-      #v(0.5em)
-      *Diagrama de Componentes*
-    ],
-    align(center)[
-      #image("images/clases.png", width: 90%)
+      #image("/images/clases.png", width: 90%)
       #v(0.5em)
       *Diagrama de Clases*
     ],
     align(center)[
-      #image("images/secuencia.png", width: 95%)
+      #image("/images/secuencia.png", width: 95%)
       #v(0.5em)
       *Diagrama de Secuencia*
     ]
