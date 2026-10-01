@@ -84,7 +84,19 @@ Como estos dispositivos no están en la misma red física, se usa *Tailscale* pa
 
 == Modelo de Interacción
 
-Las operarciones de el sistema se componen de dos formas dependiendo de cómo el cliente espera la respuesta. Las Operaciones Síncronas, que hacen referencia a la consultoría de eventos, reserva de puestos y modificación de una reserva. El cliente envía una solicitud y se queda en espera hasta que reciba una respuesta antes de continuar. Acá se implementa el patrón REQ/REP de ZeroMQ, en el cliente y el gestor de transacciones, y como en el gestor de transacciones y el servicio RMC. Y las Operaciones Asíncronas, que hacen referencia a la cancelación de una reserva. El cliente envía una solicitud y recibe de manera inmediata una confirmación de que fue recibida, sin tener que esperar que la cancelación se complete, cuando la cancelación finalmente se procesa en la base de datos, el sistema le avisa al cliente por separado mediante una notificación. Acá se implementa con DEALER/ROUTER para que el cliente no se bloquee al enviar la cancelación, y con PUB/SUB para el envío de la notificación.
+#align(center)[
+  #image("/images/componentes.png", width: 85%)
+  #v(0.3em)
+  *Diagrama de Componentes*
+]
+
+El diagrama anterior muestra cómo cada componente se comunica según el tipo de operación. Las operaciones del sistema se componen de dos formas, dependiendo de cómo el cliente espera la respuesta:
+
+*Operaciones síncronas*: hacen referencia a la consulta de eventos, reserva de puestos y modificación de una reserva. El cliente envía una solicitud y se queda en espera hasta recibir una respuesta antes de continuar. Se implementa con el patrón *REQ/REP* de ZeroMQ, tanto entre el Cliente y el Gestor de Transacciones como entre el Gestor de Transacciones y el servicio RMC.
+
+*Operaciones asíncronas*: hacen referencia a la cancelación de una reserva. El cliente envía la solicitud y recibe de manera inmediata una confirmación de que fue recibida, sin tener que esperar a que la cancelación se complete. Cuando la cancelación finalmente se procesa en la base de datos, el sistema le avisa al cliente por separado mediante una notificación. Se implementa con *DEALER/ROUTER* para que el cliente no se bloquee al enviar la cancelación, y con *PUB/SUB* para el envío de la notificación.
+
+Se asume un modelo de tiempo asíncrono: no hay garantías estrictas de límites de latencia entre nodos, dado que la comunicación ocurre sobre una red overlay (Tailscale) con latencias variables según la ubicación física real de cada dispositivo.
 
 == Modelo de Fallos
 
