@@ -80,12 +80,12 @@ Esta primera entrega cubre la arquitectura base: la consulta y la reserva funcio
 *Modelo físico.* El sistema se despliega en tres dispositivos (@fig-despliegue), uno por capa. Como no están en la misma red física, se conectan mediante *Tailscale*, una red privada virtual que les asigna direcciones IP fijas (100.x.y.z) sin importar desde dónde se conecten.
 
 #table(
-  columns: (auto, 1.6fr, 1.2fr, 1fr, 3fr),
+  columns: (auto, 1.6fr, 1.2fr, 1fr, 1.2fr, 3fr),
   align: left,
-  [*Nodo*], [*Dispositivo*], [*Sistema operativo*], [*RAM / disco*], [*Rol*],
-  [1], [Lenovo ThinkPad E16 Gen2 (Samuel Montaña)], [Linux Mint 22.3], [16 GB / 512 GB], [Capa de consumidores: procesos cliente que generan las solicitudes de consulta y reserva.],
-  [2], [Dell XPS 13 9310 (Elier Ibarra)], [Linux Mint 22.1], [15 GB / 229 GB], [Capa de negocio: Gestor de Transacciones, RMC y (Entrega 2) Cancelaciones y Notificaciones.],
-  [3], [Google Pixel 9a], [Android 17], [8 GB / 128 GB], [Capa de almacenamiento: Servicio de Persistencia, más un cliente adicional que genera carga y mide sus tiempos de respuesta.],
+  [*Nodo*], [*Dispositivo*], [*Sistema operativo*], [*RAM / disco*], [*IP*], [*Rol*],
+  [1], [Lenovo ThinkPad E16 Gen2 (Samuel Montaña)], [Linux Mint 22.3], [16 GB / 512 GB], [100.91.50.27], [Capa de consumidores: procesos cliente que generan las solicitudes de consulta y reserva.],
+  [2], [Dell XPS 13 9310 (Elier Ibarra)], [Linux Mint 22.1], [15 GB / 229 GB], [100.100.235.31], [Capa de negocio: Gestor de Transacciones, RMC y (Entrega 2) Cancelaciones y Notificaciones.],
+  [3], [Google Pixel 9a], [Android 17], [8 GB / 128 GB], [100.67.81.74], [Capa de almacenamiento: Servicio de Persistencia, más un cliente adicional que genera carga y mide sus tiempos de respuesta.],
 )
 
 *Modelo arquitectónico.* Es una arquitectura cliente-servidor de tres capas (@fig-componentes). Los *procesos cliente* envían solicitudes al *Gestor de Transacciones* (GT), la puerta de entrada, que las enruta por el canal síncrono hacia el *RMC* (reserva, modificación y consulta); el RMC consulta y actualiza los datos a través del *Servicio de Persistencia*. El servicio de Cancelaciones y su canal asíncrono forman parte del diseño pero se implementan en la Entrega 2. Cada servicio tiene un puerto fijo para que la comunicación sea predecible:
