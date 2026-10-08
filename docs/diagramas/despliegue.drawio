@@ -1,56 +1,18 @@
-<mxfile host="app.diagrams.net">
-  <diagram name="Despliegue" id="despliegue1">
-    <mxGraphModel dx="1414" dy="877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="n1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontStyle=1" value="Nodo 1 — PC personal&#xa;Capa de Consumidores" vertex="1">
-          <mxGeometry height="100" width="280" x="260" y="40" as="geometry" />
-        </mxCell>
-        <mxCell id="n1a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673A6;" value="Procesos cliente" vertex="1">
-          <mxGeometry height="30" width="140" x="330" y="90" as="geometry" />
-        </mxCell>
-        <mxCell id="n2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontStyle=1" value="Nodo 2 — VM universitaria&#xa;Capa de Servicios de Negocio" vertex="1">
-          <mxGeometry height="180" width="700" x="60" y="220" as="geometry" />
-        </mxCell>
-        <mxCell id="n2a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82B366;" value="Gestor de Transacciones&#xa;(canal síncrono 9900,&#xa;canal asíncrono 9901)" vertex="1">
-          <mxGeometry height="90" width="200" x="310" y="280" as="geometry" />
-        </mxCell>
-        <mxCell id="n2b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82B366;" value="RMC&#xa;(puerto 9902)" vertex="1">
-          <mxGeometry height="90" width="180" x="80" y="280" as="geometry" />
-        </mxCell>
-        <mxCell id="n2c" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82B366;" value="Cancelaciones y&#xa;Notificaciones&#xa;(puerto 9903)" vertex="1">
-          <mxGeometry height="90" width="150" x="580" y="280" as="geometry" />
-        </mxCell>
-        <mxCell id="n3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontStyle=1" value="Nodo 3 — Celular o PC adicional&#xa;Capa de Almacenamiento" vertex="1">
-          <mxGeometry height="100" width="350" x="190" y="450" as="geometry" />
-        </mxCell>
-        <mxCell id="n3a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#D79B00;" value="Servicio de Persistencia&#xa;(puerto 9904)" vertex="1">
-          <mxGeometry height="30" width="220" x="290" y="500" as="geometry" />
-        </mxCell>
-        <mxCell id="e1" edge="1" parent="1" source="n1a" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" target="n2a" value="Tailscale (VPN)">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="410" y="200" />
-              <mxPoint x="410" y="200" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e2" edge="1" parent="1" source="n2b" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" target="n3a" value="Tailscale (VPN)">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="120" y="515" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e3" edge="1" parent="1" source="n2c" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" target="n3a">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="655" y="515" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+<mxfile host="app.diagrams.net"><diagram name="despliegue" id="despliegue"><mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="470" math="0" shadow="0"><root><mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="c2" value="&lt;b&gt;Nodo 1 — PC de Samuel&lt;/b&gt;&lt;br&gt;Lenovo ThinkPad E16 Gen2&lt;br&gt;Linux Mint 22.3 · 16 GB RAM&lt;br&gt;Capa de consumidores" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#222222;fontSize=14;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;" vertex="1" parent="1"><mxGeometry x="20" y="20" width="260" height="400" as="geometry"/></mxCell>
+        <mxCell id="c3" value="&lt;b&gt;Nodo 2 — PC de Elier&lt;/b&gt;&lt;br&gt;Dell XPS 13 9310&lt;br&gt;Linux Mint 22.1 · 15 GB RAM&lt;br&gt;Capa de servicios de negocio" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#222222;fontSize=14;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;" vertex="1" parent="1"><mxGeometry x="340" y="20" width="330" height="400" as="geometry"/></mxCell>
+        <mxCell id="c4" value="&lt;b&gt;Nodo 3 — Google Pixel 9a&lt;/b&gt;&lt;br&gt;Android 17 · 8 GB RAM&lt;br&gt;Capa de almacenamiento" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#222222;fontSize=14;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;" vertex="1" parent="1"><mxGeometry x="730" y="20" width="250" height="400" as="geometry"/></mxCell>
+        <mxCell id="c5" value="&lt;b&gt;Procesos cliente&lt;/b&gt;&lt;br&gt;cmd/cliente (Go)&lt;br&gt;REQ → :9900" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontColor=#222222;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="40" y="110" width="220" height="90" as="geometry"/></mxCell>
+        <mxCell id="c6" value="&lt;b&gt;Gestor de Transacciones&lt;/b&gt;&lt;br&gt;cmd/gestor_transacciones&lt;br&gt;REP :9900 · asíncrono :9901*" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontColor=#222222;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="370" y="110" width="270" height="90" as="geometry"/></mxCell>
+        <mxCell id="c7" value="&lt;b&gt;Servicio RMC&lt;/b&gt;&lt;br&gt;cmd/rmc&lt;br&gt;REP :9902 → REQ :9904" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontColor=#222222;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="370" y="235" width="270" height="90" as="geometry"/></mxCell>
+        <mxCell id="c8" value="&lt;b&gt;Cancelaciones y Notificaciones&lt;/b&gt;&lt;br&gt;PULL :9903 *" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontColor=#222222;fontSize=12;align=center;verticalAlign=middle;dashed=1;" vertex="1" parent="1"><mxGeometry x="370" y="350" width="270" height="60" as="geometry"/></mxCell>
+        <mxCell id="c9" value="&lt;b&gt;Cliente adicional&lt;/b&gt;&lt;br&gt;cmd/cliente (Go)&lt;br&gt;carga + métricas" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontColor=#222222;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="745" y="110" width="220" height="90" as="geometry"/></mxCell>
+        <mxCell id="c10" value="&lt;b&gt;Servicio de Persistencia&lt;/b&gt;&lt;br&gt;cmd/persistencia&lt;br&gt;REP :9904 · BD + JSON" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#666666;fontColor=#222222;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="745" y="235" width="220" height="90" as="geometry"/></mxCell>
+        <mxCell id="c11" value="REQ/REP" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=12;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="260" y="155" as="sourcePoint"/><mxPoint x="370" y="155" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="c12" value="REQ/REP" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=12;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="745" y="155" as="sourcePoint"/><mxPoint x="640" y="155" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="c13" value="REQ/REP" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=12;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="505" y="200" as="sourcePoint"/><mxPoint x="505" y="235" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="c14" value="REQ/REP" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=12;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="640" y="280" as="sourcePoint"/><mxPoint x="745" y="280" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="c15" value="" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=12;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;dashed=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="370" y="165" as="sourcePoint"/><mxPoint x="370" y="380" as="targetPoint"/><Array as="points"><mxPoint x="355" y="165"/><mxPoint x="355" y="380"/></Array></mxGeometry></mxCell>
+        <mxCell id="c16" value="REQ/REP *" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=12;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;dashed=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="640" y="395" as="sourcePoint"/><mxPoint x="745" y="310" as="targetPoint"/><Array as="points"><mxPoint x="700" y="395"/><mxPoint x="700" y="310"/></Array></mxGeometry></mxCell>
+        <mxCell id="c17" value="Línea continua: implementado en la Entrega 1 · Línea punteada y (*): diseño, se implementa en la Entrega 2 · Los tres nodos se conectan por la red overlay Tailscale (WireGuard)." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontColor=#222222;fontStyle=2;" vertex="1" parent="1"><mxGeometry x="20" y="438" width="900" height="23" as="geometry"/></mxCell>
+      </root></mxGraphModel></diagram></mxfile>

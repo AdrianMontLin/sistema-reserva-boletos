@@ -1,46 +1,14 @@
-<mxfile host="app.diagrams.net">
-  <diagram name="Componentes" id="componentes1">
-    <mxGraphModel dx="900" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-
-        <mxCell id="c1" value="Cliente&#10;(genera carga)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;" vertex="1" parent="1">
-          <mxGeometry x="330" y="40" width="160" height="60" as="geometry" />
-        </mxCell>
-
-        <mxCell id="c2" value="Gestor de Transacciones&#10;(enrutador principal)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
-          <mxGeometry x="310" y="160" width="200" height="70" as="geometry" />
-        </mxCell>
-
-        <mxCell id="c3" value="RMC&#10;(reserva / consulta)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
-          <mxGeometry x="140" y="300" width="180" height="70" as="geometry" />
-        </mxCell>
-
-        <mxCell id="c4" value="Cancelaciones&#10;y Notificaciones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
-          <mxGeometry x="500" y="300" width="180" height="70" as="geometry" />
-        </mxCell>
-
-        <mxCell id="c5" value="Persistencia&#10;(CRUD sobre datos)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;" vertex="1" parent="1">
-          <mxGeometry x="310" y="440" width="200" height="70" as="geometry" />
-        </mxCell>
-
-        <mxCell id="e1" value="Solicitudes" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="c1" target="c2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e2" value="Síncrono (REQ/REP)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="c2" target="c3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e3" value="Asíncrono (DEALER/ROUTER)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="c2" target="c4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e4" value="CRUD" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="c3" target="c5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e5" value="CRUD" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="c4" target="c5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+<mxfile host="app.diagrams.net"><diagram name="componentes" id="componentes"><mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="380" math="0" shadow="0"><root><mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="c2" value="&lt;b&gt;Procesos cliente&lt;/b&gt;&lt;br&gt;Nodos 1 y 3" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#222222;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="20" y="120" width="150" height="90" as="geometry"/></mxCell>
+        <mxCell id="c3" value="&lt;b&gt;Gestor de Transacciones&lt;/b&gt;&lt;br&gt;(GT) · enrutador principal" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#222222;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="230" y="120" width="230" height="90" as="geometry"/></mxCell>
+        <mxCell id="c4" value="&lt;b&gt;Servicio RMC&lt;/b&gt;&lt;br&gt;reserva · consulta&lt;br&gt;modificación *" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#222222;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="550" y="40" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="c5" value="&lt;b&gt;Cancelaciones y&lt;/b&gt;&lt;br&gt;Notificaciones *" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#222222;fontSize=13;align=center;verticalAlign=middle;dashed=1;" vertex="1" parent="1"><mxGeometry x="550" y="220" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="c6" value="&lt;b&gt;Servicio de&lt;/b&gt;&lt;br&gt;Persistencia&lt;br&gt;BD + snapshot" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#222222;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="840" y="120" width="140" height="90" as="geometry"/></mxCell>
+        <mxCell id="c7" value="REQ/REP" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="170" y="165" as="sourcePoint"/><mxPoint x="230" y="165" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="c8" value="REQ/REP" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="460" y="145" as="sourcePoint"/><mxPoint x="550" y="85" as="targetPoint"/><Array as="points"><mxPoint x="505" y="145"/><mxPoint x="505" y="85"/></Array></mxGeometry></mxCell>
+        <mxCell id="c9" value="asíncrono" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;dashed=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="460" y="185" as="sourcePoint"/><mxPoint x="550" y="265" as="targetPoint"/><Array as="points"><mxPoint x="505" y="185"/><mxPoint x="505" y="265"/></Array></mxGeometry></mxCell>
+        <mxCell id="c10" value="REQ/REP" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=12;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="750" y="85" as="sourcePoint"/><mxPoint x="840" y="145" as="targetPoint"/><Array as="points"><mxPoint x="795" y="85"/><mxPoint x="795" y="145"/></Array></mxGeometry></mxCell>
+        <mxCell id="c11" value="REQ/REP" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=12;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;dashed=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="750" y="265" as="sourcePoint"/><mxPoint x="840" y="185" as="targetPoint"/><Array as="points"><mxPoint x="795" y="265"/><mxPoint x="795" y="185"/></Array></mxGeometry></mxCell>
+        <mxCell id="c12" value="notificación (PUB/SUB)" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=12;fontColor=#333333;strokeColor=#333333;endArrow=open;endFill=0;startArrow=none;dashed=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="650" y="310" as="sourcePoint"/><mxPoint x="95" y="210" as="targetPoint"/><Array as="points"><mxPoint x="650" y="340"/><mxPoint x="95" y="340"/></Array></mxGeometry></mxCell>
+        <mxCell id="c13" value="Puertos: GT 9900 (síncrono) y 9901 (asíncrono) · RMC 9902 · Cancelaciones 9903 · Persistencia 9904.   * Se implementa en la Entrega 2." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontColor=#222222;fontStyle=2;" vertex="1" parent="1"><mxGeometry x="20" y="356" width="900" height="23" as="geometry"/></mxCell>
+      </root></mxGraphModel></diagram></mxfile>
