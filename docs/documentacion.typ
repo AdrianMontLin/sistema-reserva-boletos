@@ -77,7 +77,7 @@ Esta primera entrega cubre la arquitectura base: la consulta y la reserva funcio
   caption: [Diagrama de clases: modelo de datos, mensajes del protocolo y almacén de la persistencia.],
 ) <fig-clases>
 
-*Modelo físico.* El sistema se despliega en tres dispositivos (@fig-despliegue), uno por capa. Como no están en la misma red física, se conectan mediante *Tailscale*, una red privada virtual que les asigna direcciones IP fijas (100.x.y.z) sin importar desde dónde se conecten.
+*Modelo físico.* El sistema se despliega en tres dispositivos (@fig-despliegue), uno por capa. Como no están en la misma red física, se conectan mediante *Tailscale*, una red privada virtual que les asigna direcciones IP fijas sin importar desde dónde se conecten.
 
 #table(
   columns: (auto, 1.6fr, 1.2fr, 1fr, 1.2fr, 3fr),
@@ -86,7 +86,7 @@ Esta primera entrega cubre la arquitectura base: la consulta y la reserva funcio
   [1], [Lenovo ThinkPad E16 Gen2 (Samuel Montaña)], [Linux Mint 22.3], [16 GB / 512 GB], [100.91.50.27], [Capa de consumidores: procesos cliente que generan las solicitudes de consulta y reserva.],
   [2], [Dell XPS 13 9310 (Elier Ibarra)], [Linux Mint 22.1], [15 GB / 229 GB], [100.100.235.31], [Capa de negocio: Gestor de Transacciones, RMC y (Entrega 2) Cancelaciones y Notificaciones.],
   [3], [Google Pixel 9a], [Android 17], [8 GB / 128 GB], [100.67.81.74], [Capa de almacenamiento: Servicio de Persistencia, más un cliente adicional que genera carga y mide sus tiempos de respuesta.],
-)
+)   
 
 *Modelo arquitectónico.* Es una arquitectura cliente-servidor de tres capas (@fig-componentes). Los *procesos cliente* envían solicitudes al *Gestor de Transacciones* (GT), la puerta de entrada, que las enruta por el canal síncrono hacia el *RMC* (reserva, modificación y consulta); el RMC consulta y actualiza los datos a través del *Servicio de Persistencia*. El servicio de Cancelaciones y su canal asíncrono forman parte del diseño pero se implementan en la Entrega 2. Cada servicio tiene un puerto fijo para que la comunicación sea predecible:
 
@@ -145,9 +145,9 @@ Las interacciones se dividen según cómo espera la respuesta el cliente:
   caption: [Diagrama del modelo de fallos: puntos de falla y tiempos límite anidados.],
 ) <fig-fallos>
 
-Se adopta el modelo de fallas por caída (_crash-stop_): un componente que falla deja de responder, pero no envía respuestas incorrectas ni corruptas. Los puntos de falla considerados son el Gestor de Transacciones y el RMC (@fig-fallos), responsables del flujo de consulta y reserva; la persistencia se trata como dependencia. También se contemplan fallas de omisión, es decir, mensajes perdidos por una interrupción de la conexión Tailscale, que desde fuera no se distinguen de una caída. No se consideran fallas arbitrarias (bizantinas).
+Se adopta el modelo de fallas por caída (_crash-stop_): un componente que falla deja de responder, pero no envía respuestas incorrectas ni corruptas. Los puntos de falla considerados son el Gestor de Transacciones y el RMC (@fig-fallos), responsables del flujo de consulta y reserva; la persistencia se trata como dependencia. También se contemplan fallas de omisión, es decir, mensajes perdidos por una interrupción de la conexión Tailscale, que desde fuera no se distinguen de una caída.
 
-La detección se basa en tiempos límite (_timeouts_) anidados: el cliente espera hasta 15 s al GT, el GT espera hasta 10 s al RMC y el RMC espera hasta 5 s a la persistencia. Como cada nivel espera menos que el anterior, una falla aguas abajo llega al cliente como una respuesta `ERROR` controlada y no como un bloqueo. Tras un _timeout_ el solicitante cierra su socket REQ y crea uno nuevo, pues un socket REQ queda bloqueado esperando una respuesta que ya no llegará. Es un detector imperfecto (no distingue una caída de una demora), con el compromiso habitual entre detectar rápido y evitar falsos positivos. En esta entrega solo se detecta y registra la falla; la recuperación se aborda en la Entrega 2.
+La detección se basa en tiempos límite (_timeouts_) anidados: el cliente espera hasta 15 s al GT, el GT espera hasta 10 s al RMC y el RMC espera hasta 5 s a la persistencia. Como cada nivel espera menos que el anterior, una falla aguas abajo llega al cliente como una respuesta `ERROR` controlada y no como un bloqueo. Tras un _timeout_ el solicitante cierra su socket REQ y crea uno nuevo, pues un socket REQ queda bloqueado esperando una respuesta que ya no llegará. Es un detector imperfecto (no distingue una caída de una demora), con el compromiso habitual entre detectar rápido y evitar falsos positivos.
 
 == Modelo de Seguridad
 
@@ -206,4 +206,3 @@ La carga la produce un generador propio escrito en Go (`cmd/cliente`). No se usa
 
 Los clientes se reparten entre el nodo 1 y el nodo 3, que ejecutan sus comandos al mismo tiempo. Como la modificación se implementa en la Entrega 2, los perfiles "reserva y modificación" usan solo reservas en esta entrega.
 
-// TODO: cómo los clientes generan las solicitudes parametrizables
