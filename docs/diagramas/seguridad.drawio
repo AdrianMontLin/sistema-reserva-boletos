@@ -1,12 +1,43 @@
-<mxfile host="app.diagrams.net"><diagram name="seguridad" id="seguridad"><mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="300" math="0" shadow="0"><root><mxCell id="0"/><mxCell id="1" parent="0"/>
-        <mxCell id="c2" value="&lt;b&gt;Dispositivo fuera de la tailnet&lt;/b&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontColor=#222222;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="20" y="8" width="270" height="44" as="geometry"/></mxCell>
-        <mxCell id="c3" value="sin acceso" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#B85450;strokeColor=#B85450;endArrow=block;endFill=1;startArrow=none;dashed=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="150" y="52" as="sourcePoint"/><mxPoint x="150" y="70" as="targetPoint"/></mxGeometry></mxCell>
-        <mxCell id="c4" value="&lt;b&gt;Red privada Tailscale — túnel cifrado (WireGuard)&lt;/b&gt;" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;fontColor=#222222;fontSize=14;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;dashed=1;" vertex="1" parent="1"><mxGeometry x="20" y="70" width="960" height="175" as="geometry"/></mxCell>
-        <mxCell id="c5" value="&lt;b&gt;Procesos cliente&lt;/b&gt;&lt;br&gt;Nodos 1 y 3" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#222222;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="60" y="115" width="230" height="85" as="geometry"/></mxCell>
-        <mxCell id="c6" value="&lt;b&gt;Capa de negocio&lt;/b&gt;&lt;br&gt;GT · RMC · Cancelaciones&lt;br&gt;Nodo 2" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#222222;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="385" y="115" width="230" height="85" as="geometry"/></mxCell>
-        <mxCell id="c7" value="&lt;b&gt;Persistencia&lt;/b&gt;&lt;br&gt;Nodo 3" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#222222;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="710" y="115" width="230" height="85" as="geometry"/></mxCell>
-        <mxCell id="c8" value="cifrado" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="290" y="157" as="sourcePoint"/><mxPoint x="385" y="157" as="targetPoint"/></mxGeometry></mxCell>
-        <mxCell id="c9" value="cifrado" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="615" y="157" as="sourcePoint"/><mxPoint x="710" y="157" as="targetPoint"/></mxGeometry></mxCell>
-        <mxCell id="c10" value="Riesgos aceptados: sin autenticación de clientes · sin firma ni verificación de integridad en la aplicación · JSON en claro dentro del túnel." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontColor=#222222;" vertex="1" parent="1"><mxGeometry x="40" y="216" width="900" height="23" as="geometry"/></mxCell>
-        <mxCell id="c11" value="Mejora futura: mecanismo CURVE de ZeroMQ (autenticación y cifrado de aplicación) y verificación de la identidad del cliente." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=11;fontColor=#222222;fontStyle=2;" vertex="1" parent="1"><mxGeometry x="20" y="261" width="900" height="21" as="geometry"/></mxCell>
-      </root></mxGraphModel></diagram></mxfile>
+<mxfile host="app.diagrams.net">
+  <diagram name="seguridad" id="seguridad">
+    <mxGraphModel dx="1414" dy="877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontColor=#222222;fontSize=12;align=center;verticalAlign=middle;" value="&lt;b&gt;Dispositivo fuera de la tailnet&lt;/b&gt;" vertex="1">
+          <mxGeometry height="44" width="270" x="20" y="8" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#B85450;strokeColor=#B85450;endArrow=block;endFill=1;startArrow=none;dashed=1;" value="sin acceso">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="52" as="sourcePoint" />
+            <mxPoint x="150" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4" parent="1" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;fontColor=#222222;fontSize=14;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;dashed=1;" value="&lt;b&gt;Red privada Tailscale — túnel cifrado (WireGuard)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="175" width="960" x="20" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#222222;fontSize=13;align=center;verticalAlign=middle;" value="&lt;b&gt;Procesos cliente&lt;/b&gt;&lt;br&gt;Nodos 1 y 3" vertex="1">
+          <mxGeometry height="85" width="230" x="60" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#222222;fontSize=12;align=center;verticalAlign=middle;" value="&lt;b&gt;Capa de negocio&lt;/b&gt;&lt;br&gt;GT · RMC · Cancelaciones&lt;br&gt;Nodo 2" vertex="1">
+          <mxGeometry height="85" width="230" x="385" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#222222;fontSize=13;align=center;verticalAlign=middle;" value="&lt;b&gt;Persistencia&lt;/b&gt;&lt;br&gt;Nodo 3" vertex="1">
+          <mxGeometry height="85" width="230" x="710" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" edge="1" parent="1" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;" value="cifrado">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="157" as="sourcePoint" />
+            <mxPoint x="385" y="157" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c9" edge="1" parent="1" style="html=1;rounded=0;strokeWidth=1.5;labelBackgroundColor=#ffffff;fontSize=11;fontColor=#333333;strokeColor=#333333;endArrow=block;endFill=1;startArrow=none;" value="cifrado">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="615" y="157" as="sourcePoint" />
+            <mxPoint x="710" y="157" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
