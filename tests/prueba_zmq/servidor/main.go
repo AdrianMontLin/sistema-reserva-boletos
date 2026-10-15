@@ -1,3 +1,5 @@
+// Prueba de humo de ZeroMQ: servidor REP en el puerto 9999.
+
 package main
 
 import (
@@ -9,12 +11,10 @@ import (
 )
 
 func main() {
-	ctx := context.Background()
-	socket := zmq4.NewRep(ctx)
+	socket := zmq4.NewRep(context.Background())
 	defer socket.Close()
 
-	err := socket.Listen("tcp://*:9999")
-	if err != nil {
+	if err := socket.Listen("tcp://*:9999"); err != nil {
 		log.Fatalf("error al escuchar: %v", err)
 	}
 	fmt.Println("Servidor de prueba escuchando en el puerto 9999...")
@@ -25,9 +25,7 @@ func main() {
 			log.Fatalf("error al recibir: %v", err)
 		}
 		fmt.Printf("Mensaje recibido: %s\n", string(msg.Frames[0]))
-
-		err = socket.Send(zmq4.NewMsgString("Hola desde el servidor!"))
-		if err != nil {
+		if err := socket.Send(zmq4.NewMsgString("Hola desde el servidor!")); err != nil {
 			log.Fatalf("error al responder: %v", err)
 		}
 	}

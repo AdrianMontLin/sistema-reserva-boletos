@@ -1,0 +1,74 @@
+[PERSISTENCIA] 15:42:29.430722 ESTADO INICIAL: 50 eventos, 70 ocurrencias | asientos: 7000 libres, 0 ocupados (de 7000) | 0 reservas
+[PERSISTENCIA] 15:42:29.431486 escuchando en tcp://127.0.0.1:9904 (REP)
+[PERSISTENCIA] 15:42:31.456225 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:31.611383 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:31.732424 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:32.452297 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:32.610285 disponibilidad E9-2 -> 100 libres
+[PERSISTENCIA] 15:42:32.611368 reservar E9-2 x3 (cliente N1-C3) -> R1 confirmada, quedan 97 libres
+[PERSISTENCIA] 15:42:32.730622 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:33.452235 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:33.610303 disponibilidad E2-2 -> 100 libres
+[PERSISTENCIA] 15:42:33.611540 reservar E2-2 x2 (cliente N1-C3) -> R2 confirmada, quedan 98 libres
+[PERSISTENCIA] 15:42:33.730929 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:34.432668 ESTADO: 50 eventos, 70 ocurrencias | asientos: 6995 libres, 5 ocupados (de 7000) | 2 reservas
+[PERSISTENCIA] 15:42:34.452656 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:34.610879 disponibilidad E47-1 -> 100 libres
+[PERSISTENCIA] 15:42:34.612412 reservar E47-1 x2 (cliente N1-C3) -> R3 confirmada, quedan 98 libres
+[PERSISTENCIA] 15:42:34.730723 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:35.453304 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:35.610144 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:35.731377 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:36.452770 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:36.610268 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:36.730580 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:37.452327 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:37.610536 disponibilidad E17-2 -> 100 libres
+[PERSISTENCIA] 15:42:37.612038 reservar E17-2 x4 (cliente N1-C3) -> R4 confirmada, quedan 96 libres
+[PERSISTENCIA] 15:42:37.731553 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:38.453064 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:38.610446 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:38.730549 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:39.433338 ESTADO: 50 eventos, 70 ocurrencias | asientos: 6989 libres, 11 ocupados (de 7000) | 4 reservas
+[PERSISTENCIA] 15:42:39.452719 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:39.610735 disponibilidad E44-1 -> 100 libres
+[PERSISTENCIA] 15:42:39.612080 reservar E44-1 x4 (cliente N1-C3) -> R5 confirmada, quedan 96 libres
+[PERSISTENCIA] 15:42:39.730385 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:40.452729 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:40.610817 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:40.731374 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:41.452610 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:41.610913 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:41.731272 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:42.452653 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:42.610575 disponibilidad E9-1 -> 100 libres
+[PERSISTENCIA] 15:42:42.611889 reservar E9-1 x4 (cliente N1-C3) -> R6 confirmada, quedan 96 libres
+[PERSISTENCIA] 15:42:42.731414 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:43.452646 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:43.610014 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:43.731323 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:44.433661 ESTADO: 50 eventos, 70 ocurrencias | asientos: 6981 libres, 19 ocupados (de 7000) | 6 reservas
+[PERSISTENCIA] 15:42:44.452919 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:44.610414 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:44.730698 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:45.452310 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:45.610367 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:45.730749 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:46.452457 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:46.610449 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:46.731364 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:47.453134 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:47.610721 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:47.731227 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:48.452679 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:48.611002 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:48.731472 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:49.434022 ESTADO: 50 eventos, 70 ocurrencias | asientos: 6981 libres, 19 ocupados (de 7000) | 6 reservas
+[PERSISTENCIA] 15:42:49.452974 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:49.610994 disponibilidad E36-1 -> 100 libres
+[PERSISTENCIA] 15:42:49.612430 reservar E36-1 x3 (cliente N1-C3) -> R7 confirmada, quedan 97 libres
+[PERSISTENCIA] 15:42:49.731285 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:50.452687 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:50.610098 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:50.731409 consultar_mes 2026-10 -> 50 eventos
+[PERSISTENCIA] 15:42:51.733910 ESTADO FINAL: 50 eventos, 70 ocurrencias | asientos: 6978 libres, 22 ocupados (de 7000) | 7 reservas

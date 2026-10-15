@@ -1,0 +1,5 @@
+[GT] 15:42:30.440425 escuchando en tcp://127.0.0.1:9900 (REP, canal síncrono) | RMC en tcp://127.0.0.1:9902 (timeout 10s)
+[GT] 15:42:51.733057 ---- MÉTRICAS FINALES (medidas en el GT) ----
+[GT] 15:42:51.733157 consulta  procesadas=53    rechazadas=0    errores=0   media=2.03 ms  desv=0.35 ms  TPM=165.0
+[GT] 15:42:51.733229 reserva   procesadas=7     rechazadas=0    errores=0   media=2.54 ms  desv=0.17 ms  TPM=24.7
+[GT] 15:42:51.733472 métricas guardadas en logs/metricas_gt.csv

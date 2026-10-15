@@ -1,3 +1,5 @@
+// Prueba de humo de ZeroMQ: cliente REQ que se conecta al servidor de prueba.
+
 package main
 
 import (
@@ -9,20 +11,15 @@ import (
 )
 
 func main() {
-	ctx := context.Background()
-	socket := zmq4.NewReq(ctx)
+	socket := zmq4.NewReq(context.Background())
 	defer socket.Close()
 
-	err := socket.Dial("tcp://127.0.0.1:9999")
-	if err != nil {
+	if err := socket.Dial("tcp://127.0.0.1:9999"); err != nil {
 		log.Fatalf("error al conectar: %v", err)
 	}
-
-	err = socket.Send(zmq4.NewMsgString("Hola desde el cliente!"))
-	if err != nil {
+	if err := socket.Send(zmq4.NewMsgString("Hola desde el cliente!")); err != nil {
 		log.Fatalf("error al enviar: %v", err)
 	}
-
 	msg, err := socket.Recv()
 	if err != nil {
 		log.Fatalf("error al recibir respuesta: %v", err)

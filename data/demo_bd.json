@@ -1,0 +1,854 @@
+{
+  "guardado": "2026-10-14T15:42:51-05:00",
+  "siguiente_reserva": 8,
+  "eventos": [
+    {
+      "id": "E1",
+      "nombre": "Concierto (E1)",
+      "ocurrencias": [
+        {
+          "id": "E1-1",
+          "fecha": "2026-10-02",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E1-2",
+          "fecha": "2026-10-16",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "nombre": "Obra de teatro (E2)",
+      "ocurrencias": [
+        {
+          "id": "E2-1",
+          "fecha": "2026-10-03",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E2-2",
+          "fecha": "2026-10-17",
+          "asientos_totales": 100,
+          "asientos_libres": 98,
+          "asientos_ocupados": 2
+        }
+      ]
+    },
+    {
+      "id": "E3",
+      "nombre": "Torneo de fútbol (E3)",
+      "ocurrencias": [
+        {
+          "id": "E3-1",
+          "fecha": "2026-10-04",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E3-2",
+          "fecha": "2026-10-18",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E4",
+      "nombre": "Cine-foro (E4)",
+      "ocurrencias": [
+        {
+          "id": "E4-1",
+          "fecha": "2026-10-05",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E4-2",
+          "fecha": "2026-10-19",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E5",
+      "nombre": "Exposición de arte (E5)",
+      "ocurrencias": [
+        {
+          "id": "E5-1",
+          "fecha": "2026-10-06",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E5-2",
+          "fecha": "2026-10-20",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E6",
+      "nombre": "Torneo de baloncesto (E6)",
+      "ocurrencias": [
+        {
+          "id": "E6-1",
+          "fecha": "2026-10-07",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E6-2",
+          "fecha": "2026-10-21",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E7",
+      "nombre": "Recital de poesía (E7)",
+      "ocurrencias": [
+        {
+          "id": "E7-1",
+          "fecha": "2026-10-08",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E7-2",
+          "fecha": "2026-10-22",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E8",
+      "nombre": "Carrera atlética (E8)",
+      "ocurrencias": [
+        {
+          "id": "E8-1",
+          "fecha": "2026-10-09",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E8-2",
+          "fecha": "2026-10-23",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E9",
+      "nombre": "Festival de danza (E9)",
+      "ocurrencias": [
+        {
+          "id": "E9-1",
+          "fecha": "2026-10-10",
+          "asientos_totales": 100,
+          "asientos_libres": 96,
+          "asientos_ocupados": 4
+        },
+        {
+          "id": "E9-2",
+          "fecha": "2026-10-24",
+          "asientos_totales": 100,
+          "asientos_libres": 97,
+          "asientos_ocupados": 3
+        }
+      ]
+    },
+    {
+      "id": "E10",
+      "nombre": "Torneo de ajedrez (E10)",
+      "ocurrencias": [
+        {
+          "id": "E10-1",
+          "fecha": "2026-10-11",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E10-2",
+          "fecha": "2026-10-25",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E11",
+      "nombre": "Concierto (E11)",
+      "ocurrencias": [
+        {
+          "id": "E11-1",
+          "fecha": "2026-10-12",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E11-2",
+          "fecha": "2026-10-26",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E12",
+      "nombre": "Obra de teatro (E12)",
+      "ocurrencias": [
+        {
+          "id": "E12-1",
+          "fecha": "2026-10-13",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E12-2",
+          "fecha": "2026-10-27",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E13",
+      "nombre": "Torneo de fútbol (E13)",
+      "ocurrencias": [
+        {
+          "id": "E13-1",
+          "fecha": "2026-10-14",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E13-2",
+          "fecha": "2026-10-28",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E14",
+      "nombre": "Cine-foro (E14)",
+      "ocurrencias": [
+        {
+          "id": "E14-1",
+          "fecha": "2026-10-01",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E14-2",
+          "fecha": "2026-10-15",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E15",
+      "nombre": "Exposición de arte (E15)",
+      "ocurrencias": [
+        {
+          "id": "E15-1",
+          "fecha": "2026-10-02",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E15-2",
+          "fecha": "2026-10-16",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E16",
+      "nombre": "Torneo de baloncesto (E16)",
+      "ocurrencias": [
+        {
+          "id": "E16-1",
+          "fecha": "2026-10-03",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E16-2",
+          "fecha": "2026-10-17",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E17",
+      "nombre": "Recital de poesía (E17)",
+      "ocurrencias": [
+        {
+          "id": "E17-1",
+          "fecha": "2026-10-04",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E17-2",
+          "fecha": "2026-10-18",
+          "asientos_totales": 100,
+          "asientos_libres": 96,
+          "asientos_ocupados": 4
+        }
+      ]
+    },
+    {
+      "id": "E18",
+      "nombre": "Carrera atlética (E18)",
+      "ocurrencias": [
+        {
+          "id": "E18-1",
+          "fecha": "2026-10-05",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E18-2",
+          "fecha": "2026-10-19",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E19",
+      "nombre": "Festival de danza (E19)",
+      "ocurrencias": [
+        {
+          "id": "E19-1",
+          "fecha": "2026-10-06",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E19-2",
+          "fecha": "2026-10-20",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E20",
+      "nombre": "Torneo de ajedrez (E20)",
+      "ocurrencias": [
+        {
+          "id": "E20-1",
+          "fecha": "2026-10-07",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        },
+        {
+          "id": "E20-2",
+          "fecha": "2026-10-21",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E21",
+      "nombre": "Concierto (E21)",
+      "ocurrencias": [
+        {
+          "id": "E21-1",
+          "fecha": "2026-10-08",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E22",
+      "nombre": "Obra de teatro (E22)",
+      "ocurrencias": [
+        {
+          "id": "E22-1",
+          "fecha": "2026-10-11",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E23",
+      "nombre": "Torneo de fútbol (E23)",
+      "ocurrencias": [
+        {
+          "id": "E23-1",
+          "fecha": "2026-10-14",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E24",
+      "nombre": "Cine-foro (E24)",
+      "ocurrencias": [
+        {
+          "id": "E24-1",
+          "fecha": "2026-10-17",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E25",
+      "nombre": "Exposición de arte (E25)",
+      "ocurrencias": [
+        {
+          "id": "E25-1",
+          "fecha": "2026-10-20",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E26",
+      "nombre": "Torneo de baloncesto (E26)",
+      "ocurrencias": [
+        {
+          "id": "E26-1",
+          "fecha": "2026-10-23",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E27",
+      "nombre": "Recital de poesía (E27)",
+      "ocurrencias": [
+        {
+          "id": "E27-1",
+          "fecha": "2026-10-26",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E28",
+      "nombre": "Carrera atlética (E28)",
+      "ocurrencias": [
+        {
+          "id": "E28-1",
+          "fecha": "2026-10-01",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E29",
+      "nombre": "Festival de danza (E29)",
+      "ocurrencias": [
+        {
+          "id": "E29-1",
+          "fecha": "2026-10-04",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E30",
+      "nombre": "Torneo de ajedrez (E30)",
+      "ocurrencias": [
+        {
+          "id": "E30-1",
+          "fecha": "2026-10-07",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E31",
+      "nombre": "Concierto (E31)",
+      "ocurrencias": [
+        {
+          "id": "E31-1",
+          "fecha": "2026-10-10",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E32",
+      "nombre": "Obra de teatro (E32)",
+      "ocurrencias": [
+        {
+          "id": "E32-1",
+          "fecha": "2026-10-13",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E33",
+      "nombre": "Torneo de fútbol (E33)",
+      "ocurrencias": [
+        {
+          "id": "E33-1",
+          "fecha": "2026-10-16",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E34",
+      "nombre": "Cine-foro (E34)",
+      "ocurrencias": [
+        {
+          "id": "E34-1",
+          "fecha": "2026-10-19",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E35",
+      "nombre": "Exposición de arte (E35)",
+      "ocurrencias": [
+        {
+          "id": "E35-1",
+          "fecha": "2026-10-22",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E36",
+      "nombre": "Torneo de baloncesto (E36)",
+      "ocurrencias": [
+        {
+          "id": "E36-1",
+          "fecha": "2026-10-25",
+          "asientos_totales": 100,
+          "asientos_libres": 97,
+          "asientos_ocupados": 3
+        }
+      ]
+    },
+    {
+      "id": "E37",
+      "nombre": "Recital de poesía (E37)",
+      "ocurrencias": [
+        {
+          "id": "E37-1",
+          "fecha": "2026-10-28",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E38",
+      "nombre": "Carrera atlética (E38)",
+      "ocurrencias": [
+        {
+          "id": "E38-1",
+          "fecha": "2026-10-03",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E39",
+      "nombre": "Festival de danza (E39)",
+      "ocurrencias": [
+        {
+          "id": "E39-1",
+          "fecha": "2026-10-06",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E40",
+      "nombre": "Torneo de ajedrez (E40)",
+      "ocurrencias": [
+        {
+          "id": "E40-1",
+          "fecha": "2026-10-09",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E41",
+      "nombre": "Concierto (E41)",
+      "ocurrencias": [
+        {
+          "id": "E41-1",
+          "fecha": "2026-10-12",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E42",
+      "nombre": "Obra de teatro (E42)",
+      "ocurrencias": [
+        {
+          "id": "E42-1",
+          "fecha": "2026-10-15",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E43",
+      "nombre": "Torneo de fútbol (E43)",
+      "ocurrencias": [
+        {
+          "id": "E43-1",
+          "fecha": "2026-10-18",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E44",
+      "nombre": "Cine-foro (E44)",
+      "ocurrencias": [
+        {
+          "id": "E44-1",
+          "fecha": "2026-10-21",
+          "asientos_totales": 100,
+          "asientos_libres": 96,
+          "asientos_ocupados": 4
+        }
+      ]
+    },
+    {
+      "id": "E45",
+      "nombre": "Exposición de arte (E45)",
+      "ocurrencias": [
+        {
+          "id": "E45-1",
+          "fecha": "2026-10-24",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E46",
+      "nombre": "Torneo de baloncesto (E46)",
+      "ocurrencias": [
+        {
+          "id": "E46-1",
+          "fecha": "2026-10-27",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E47",
+      "nombre": "Recital de poesía (E47)",
+      "ocurrencias": [
+        {
+          "id": "E47-1",
+          "fecha": "2026-10-02",
+          "asientos_totales": 100,
+          "asientos_libres": 98,
+          "asientos_ocupados": 2
+        }
+      ]
+    },
+    {
+      "id": "E48",
+      "nombre": "Carrera atlética (E48)",
+      "ocurrencias": [
+        {
+          "id": "E48-1",
+          "fecha": "2026-10-05",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E49",
+      "nombre": "Festival de danza (E49)",
+      "ocurrencias": [
+        {
+          "id": "E49-1",
+          "fecha": "2026-10-08",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    },
+    {
+      "id": "E50",
+      "nombre": "Torneo de ajedrez (E50)",
+      "ocurrencias": [
+        {
+          "id": "E50-1",
+          "fecha": "2026-10-11",
+          "asientos_totales": 100,
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
+        }
+      ]
+    }
+  ],
+  "reservas": [
+    {
+      "id": "R1",
+      "id_evento": "E9",
+      "id_ocurrencia": "E9-2",
+      "id_cliente": "N1-C3",
+      "num_asientos": 3,
+      "estado": "confirmada"
+    },
+    {
+      "id": "R2",
+      "id_evento": "E2",
+      "id_ocurrencia": "E2-2",
+      "id_cliente": "N1-C3",
+      "num_asientos": 2,
+      "estado": "confirmada"
+    },
+    {
+      "id": "R3",
+      "id_evento": "E47",
+      "id_ocurrencia": "E47-1",
+      "id_cliente": "N1-C3",
+      "num_asientos": 2,
+      "estado": "confirmada"
+    },
+    {
+      "id": "R4",
+      "id_evento": "E17",
+      "id_ocurrencia": "E17-2",
+      "id_cliente": "N1-C3",
+      "num_asientos": 4,
+      "estado": "confirmada"
+    },
+    {
+      "id": "R5",
+      "id_evento": "E44",
+      "id_ocurrencia": "E44-1",
+      "id_cliente": "N1-C3",
+      "num_asientos": 4,
+      "estado": "confirmada"
+    },
+    {
+      "id": "R6",
+      "id_evento": "E9",
+      "id_ocurrencia": "E9-1",
+      "id_cliente": "N1-C3",
+      "num_asientos": 4,
+      "estado": "confirmada"
+    },
+    {
+      "id": "R7",
+      "id_evento": "E36",
+      "id_ocurrencia": "E36-1",
+      "id_cliente": "N1-C3",
+      "num_asientos": 3,
+      "estado": "confirmada"
+    }
+  ]
+}

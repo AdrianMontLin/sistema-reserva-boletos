@@ -210,4 +210,4 @@ La carga la produce un generador propio escrito en Go (`cmd/cliente`). No se usa
   [8 clientes], [4 solo consulta + 4 reserva], [`-clientes 8 -solo-consulta 4 -pct-consulta 0`],
 )
 
-Los clientes se reparten entre el nodo 1 y el nodo 3, que ejecutan sus comandos al mismo tiempo. Como la modificación se implementa en la Entrega 2, los perfiles "reserva y modificación" usan solo reservas en esta entrega.
+Los clientes se reparten entre el nodo 1 y el nodo 3, que ejecutan sus comandos al mismo tiempo. Como la modificación se implementa en la Entrega 2, los perfiles reserva y modificación usan solo reservas en esta entrega.
