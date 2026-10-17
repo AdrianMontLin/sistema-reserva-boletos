@@ -1,0 +1,321 @@
+timestamp_ms,cliente,operacion,latencia_ms,codigo,mensaje
+1792081421171,N1-C2,consulta,321.116,OK,
+1792081421893,N1-C6,consulta,422.348,OK,
+1792081422088,N1-C7,consulta,543.652,OK,
+1792081422217,N1-C5,consulta,666.595,OK,
+1792081422395,N1-C1,consulta,357.052,OK,
+1792081422614,N1-C8,consulta,231.684,OK,
+1792081422819,N1-C3,consulta,360.445,OK,
+1792081423225,N1-C4,consulta,265.130,OK,
+1792081424147,N1-C2,consulta,297.715,OK,
+1792081424961,N1-C7,reserva,416.860,OK,reserva confirmada
+1792081425268,N1-C6,reserva,797.599,OK,reserva confirmada
+1792081425575,N1-C5,reserva,1023.963,OK,reserva confirmada
+1792081425835,N1-C1,consulta,796.093,OK,
+1792081426115,N1-C8,reserva,733.325,OK,reserva confirmada
+1792081426264,N1-C3,consulta,806.206,OK,
+1792081426428,N1-C4,consulta,467.664,OK,
+1792081427125,N1-C2,consulta,275.038,OK,
+1792081427828,N1-C6,reserva,356.951,OK,reserva confirmada
+1792081428340,N1-C7,reserva,795.725,OK,reserva confirmada
+1792081428546,N1-C5,reserva,995.340,OK,reserva confirmada
+1792081428853,N1-C1,consulta,814.136,OK,
+1792081429057,N1-C8,reserva,675.120,OK,reserva confirmada
+1792081429269,N1-C3,consulta,810.596,OK,
+1792081429406,N1-C4,consulta,446.296,OK,
+1792081430094,N1-C2,consulta,244.637,OK,
+1792081430900,N1-C6,reserva,429.100,OK,reserva confirmada
+1792081431207,N1-C5,reserva,655.756,OK,reserva confirmada
+1792081431509,N1-C7,reserva,964.854,OK,reserva confirmada
+1792081431730,N1-C1,consulta,692.642,OK,
+1792081432026,N1-C8,reserva,643.794,OK,reserva confirmada
+1792081432163,N1-C3,consulta,704.759,OK,
+1792081432437,N1-C4,consulta,477.164,OK,
+1792081433076,N1-C2,consulta,226.899,OK,
+1792081433887,N1-C6,reserva,417.167,OK,reserva confirmada
+1792081434176,N1-C7,reserva,632.615,OK,reserva confirmada
+1792081434478,N1-C5,reserva,926.405,OK,reserva confirmada
+1792081434698,N1-C1,consulta,659.332,OK,
+1792081434991,N1-C8,reserva,610.111,OK,reserva confirmada
+1792081435126,N1-C3,consulta,668.400,OK,
+1792081435313,N1-C4,consulta,353.541,OK,
+1792081436234,N1-C2,consulta,384.651,OK,
+1792081436839,N1-C6,reserva,369.141,OK,reserva confirmada
+1792081437057,N1-C7,reserva,511.864,OK,reserva confirmada
+1792081437352,N1-C5,reserva,800.980,OK,reserva confirmada
+1792081437667,N1-C1,consulta,628.767,OK,
+1792081437956,N1-C8,reserva,573.928,OK,reserva confirmada
+1792081438180,N1-C3,consulta,721.281,OK,
+1792081438391,N1-C4,consulta,430.768,OK,
+1792081439195,N1-C2,consulta,346.180,OK,
+1792081439810,N1-C6,reserva,338.808,OK,reserva confirmada
+1792081440111,N1-C7,reserva,565.935,OK,reserva confirmada
+1792081440461,N1-C5,reserva,909.881,OK,reserva confirmada
+1792081440741,N1-C1,consulta,703.688,OK,
+1792081441550,N1-C8,reserva,1168.862,OK,reserva confirmada
+1792081441766,N1-C3,consulta,1307.850,OK,
+1792081442062,N1-C4,consulta,1101.563,OK,
+1792081442370,N1-C2,consulta,520.602,OK,
+1792081442884,N1-C6,reserva,412.902,OK,reserva confirmada
+1792081443189,N1-C5,reserva,637.588,OK,reserva confirmada
+1792081443503,N1-C7,reserva,958.060,OK,reserva confirmada
+1792081443804,N1-C1,consulta,765.092,OK,
+1792081444110,N1-C8,reserva,728.471,OK,reserva confirmada
+1792081444249,N1-C3,consulta,791.248,OK,
+1792081444525,N1-C4,consulta,566.001,OK,
+1792081445155,N1-C2,consulta,305.584,OK,
+1792081445851,N1-C6,reserva,380.482,OK,reserva confirmada
+1792081446153,N1-C7,reserva,609.340,OK,reserva confirmada
+1792081446460,N1-C5,reserva,908.490,OK,reserva confirmada
+1792081446676,N1-C1,consulta,638.434,OK,
+1792081446974,N1-C8,reserva,592.203,OK,reserva confirmada
+1792081447182,N1-C3,consulta,723.777,OK,
+1792081447300,N1-C4,consulta,339.556,OK,
+1792081448216,N1-C2,consulta,366.191,OK,
+1792081448923,N1-C6,reserva,452.245,OK,reserva confirmada
+1792081449231,N1-C7,reserva,686.942,OK,reserva confirmada
+1792081449471,N1-C5,reserva,920.274,OK,reserva confirmada
+1792081449767,N1-C1,consulta,728.408,OK,
+1792081450054,N1-C8,reserva,672.076,OK,reserva confirmada
+1792081450266,N1-C3,consulta,808.397,OK,
+1792081450557,N1-C4,consulta,596.965,OK,
+1792081451176,N1-C2,consulta,327.071,OK,
+1792081451895,N1-C7,reserva,350.679,OK,reserva confirmada
+1792081452201,N1-C5,reserva,649.198,OK,reserva confirmada
+1792081452502,N1-C6,reserva,1031.094,OK,reserva confirmada
+1792081452832,N1-C1,consulta,793.851,OK,
+1792081453122,N1-C8,reserva,740.455,OK,reserva confirmada
+1792081453340,N1-C3,consulta,882.170,OK,
+1792081453542,N1-C4,consulta,581.693,OK,
+1792081454561,N1-C2,consulta,711.995,OK,
+1792081454864,N1-C6,reserva,392.225,OK,reserva confirmada
+1792081455101,N1-C7,reserva,556.416,OK,reserva confirmada
+1792081455472,N1-C5,reserva,921.368,OK,reserva confirmada
+1792081455687,N1-C1,consulta,648.664,OK,
+1792081455976,N1-C8,reserva,594.646,OK,reserva confirmada
+1792081456199,N1-C3,consulta,740.870,OK,
+1792081456400,N1-C4,consulta,440.440,OK,
+1792081457218,N1-C2,consulta,369.327,OK,
+1792081457833,N1-C6,reserva,361.701,OK,reserva confirmada
+1792081458140,N1-C7,reserva,595.024,OK,reserva confirmada
+1792081458384,N1-C5,reserva,833.185,OK,reserva confirmada
+1792081458652,N1-C1,consulta,613.435,OK,
+1792081458887,N1-C8,reserva,505.950,OK,reserva confirmada
+1792081459164,N1-C3,consulta,706.248,OK,
+1792081459282,N1-C4,consulta,322.175,OK,
+1792081460193,N1-C2,consulta,343.943,OK,
+1792081460802,N1-C6,reserva,331.171,OK,reserva confirmada
+1792081461104,N1-C5,reserva,553.159,OK,reserva confirmada
+1792081461411,N1-C7,reserva,866.481,OK,reserva confirmada
+1792081461730,N1-C1,consulta,692.326,OK,
+1792081461970,N1-C8,reserva,588.946,OK,reserva confirmada
+1792081462245,N1-C3,consulta,787.272,OK,
+1792081462452,N1-C4,consulta,492.159,OK,
+1792081463165,N1-C2,consulta,315.877,OK,
+1792081463977,N1-C7,reserva,432.588,OK,reserva confirmada
+1792081464284,N1-C5,reserva,733.458,OK,reserva confirmada
+1792081464528,N1-C6,reserva,1057.826,OK,reserva confirmada
+1792081464821,N1-C1,consulta,782.478,OK,
+1792081465104,N1-C8,reserva,721.999,OK,reserva confirmada
+1792081465316,N1-C3,consulta,857.245,OK,
+1792081465520,N1-C4,consulta,560.851,OK,
+1792081466333,N1-C2,consulta,483.800,OK,
+1792081466946,N1-C6,reserva,475.282,OK,reserva confirmada
+1792081467255,N1-C5,reserva,703.534,OK,reserva confirmada
+1792081467472,N1-C7,reserva,927.736,OK,reserva confirmada
+1792081467765,N1-C1,consulta,727.810,OK,
+1792081467981,N1-C8,reserva,599.144,OK,reserva confirmada
+1792081468278,N1-C3,consulta,818.919,OK,
+1792081468380,N1-C4,consulta,420.092,OK,
+1792081469302,N1-C2,consulta,452.382,OK,
+1792081469814,N1-C6,reserva,343.770,OK,reserva confirmada
+1792081470525,N1-C7,reserva,981.280,OK,reserva confirmada
+1792081470838,N1-C5,reserva,1287.432,OK,reserva confirmada
+1792081471145,N1-C1,consulta,1107.450,OK,
+1792081471351,N1-C8,reserva,969.111,OK,reserva confirmada
+1792081471572,N1-C3,consulta,1114.213,OK,
+1792081471774,N1-C4,consulta,814.158,OK,
+1792081472076,N1-C2,consulta,226.343,OK,
+1792081472886,N1-C7,reserva,341.500,OK,reserva confirmada
+1792081473193,N1-C6,reserva,722.546,OK,reserva confirmada
+1792081473472,N1-C5,reserva,920.520,OK,reserva confirmada
+1792081473814,N1-C1,consulta,776.615,OK,
+1792081474115,N1-C8,reserva,732.523,OK,reserva confirmada
+1792081474226,N1-C3,consulta,767.857,OK,
+1792081474439,N1-C4,consulta,479.438,OK,
+1792081475242,N1-C2,consulta,392.460,OK,
+1792081475958,N1-C6,reserva,487.734,OK,reserva confirmada
+1792081476265,N1-C7,reserva,720.367,OK,reserva confirmada
+1792081476573,N1-C5,reserva,1021.426,OK,reserva confirmada
+1792081476784,N1-C1,consulta,746.132,OK,
+1792081477079,N1-C8,reserva,697.297,OK,reserva confirmada
+1792081477211,N1-C3,consulta,752.878,OK,
+1792081477405,N1-C4,consulta,445.469,OK,
+1792081478213,N1-C2,consulta,363.704,OK,
+1792081478930,N1-C6,reserva,459.855,OK,reserva confirmada
+1792081479235,N1-C5,reserva,684.370,OK,reserva confirmada
+1792081479537,N1-C7,reserva,992.775,OK,reserva confirmada
+1792081479757,N1-C1,consulta,719.101,OK,
+1792081480049,N1-C8,reserva,667.322,OK,reserva confirmada
+1792081480259,N1-C3,consulta,800.709,OK,
+1792081480370,N1-C4,consulta,410.451,OK,
+1792081481098,N1-C2,consulta,248.971,OK,
+1792081481795,N1-C6,reserva,324.659,OK,reserva confirmada
+1792081482097,N1-C7,reserva,552.620,OK,reserva confirmada
+1792081482404,N1-C5,reserva,853.016,OK,reserva confirmada
+1792081482621,N1-C1,consulta,583.062,OK,
+1792081482820,N1-C8,reserva,438.223,OK,reserva confirmada
+1792081483000,N1-C3,consulta,542.727,OK,
+1792081483229,N1-C4,consulta,269.007,OK,
+1792081484166,N1-C2,consulta,317.142,OK,
+1792081484867,N1-C6,reserva,396.670,OK,reserva confirmada
+1792081485174,N1-C7,reserva,630.102,OK,reserva confirmada
+1792081485476,N1-C5,reserva,925.723,OK,reserva confirmada
+1792081485797,N1-C1,consulta,758.727,OK,
+1792081486308,N1-C8,reserva,925.973,OK,reserva confirmada
+1792081486412,N1-C3,consulta,952.980,OK,
+1792081486620,N1-C4,consulta,660.259,OK,
+1792081487222,N1-C2,consulta,373.109,OK,
+1792081488139,N1-C6,reserva,668.342,OK,reserva confirmada
+1792081488448,N1-C5,reserva,897.212,OK,reserva confirmada
+1792081488758,N1-C7,reserva,1214.246,OK,reserva confirmada
+1792081488973,N1-C1,consulta,934.621,OK,
+1792081489782,N1-C8,reserva,1399.681,OK,reserva confirmada
+1792081490100,N1-C3,consulta,1642.069,OK,
+1792081490302,N1-C4,consulta,1341.955,OK,
+1792081490596,N1-C2,consulta,746.863,OK,
+1792081490806,N1-C6,reserva,334.586,OK,reserva confirmada
+1792081491108,N1-C7,reserva,564.253,OK,reserva confirmada
+1792081491575,N1-C5,reserva,1023.824,OK,reserva confirmada
+1792081491837,N1-C1,consulta,799.558,OK,
+1792081492137,N1-C8,reserva,755.799,OK,reserva confirmada
+1792081492371,N1-C3,consulta,913.668,OK,
+1792081492552,N1-C4,consulta,592.045,OK,
+1792081493169,N1-C2,consulta,320.093,OK,
+1792081493879,N1-C6,reserva,408.089,OK,reserva confirmada
+1792081494185,N1-C5,reserva,634.808,OK,reserva confirmada
+1792081494488,N1-C7,reserva,943.834,OK,reserva confirmada
+1792081494707,N1-C1,consulta,668.418,OK,
+1792081494962,N1-C8,reserva,581.236,OK,reserva confirmada
+1792081495620,N1-C3,consulta,1161.142,OK,
+1792081495730,N1-C4,consulta,770.389,OK,
+1792081496142,N1-C2,consulta,292.425,OK,
+1792081496858,N1-C6,reserva,386.948,OK,reserva confirmada
+1792081497156,N1-C7,reserva,611.664,OK,reserva confirmada
+1792081497457,N1-C5,reserva,905.962,OK,reserva confirmada
+1792081497668,N1-C1,consulta,629.969,OK,
+1792081497963,N1-C8,reserva,581.403,OK,reserva confirmada
+1792081498187,N1-C3,consulta,729.094,OK,
+1792081498595,N1-C4,consulta,635.681,OK,
+1792081499131,N1-C2,consulta,281.681,OK,
+1792081499912,N1-C6,reserva,441.883,OK,reserva confirmada
+1792081500228,N1-C7,reserva,684.022,OK,reserva confirmada
+1792081500467,N1-C5,reserva,916.232,OK,reserva confirmada
+1792081500742,N1-C1,consulta,704.779,OK,
+1792081501048,N1-C8,reserva,665.799,OK,reserva confirmada
+1792081501259,N1-C3,consulta,800.297,OK,
+1792081501470,N1-C4,consulta,509.864,OK,
+1792081502188,N1-C2,consulta,339.253,OK,
+1792081502890,N1-C6,reserva,418.531,OK,reserva confirmada
+1792081503197,N1-C7,reserva,652.643,OK,reserva confirmada
+1792081503416,N1-C5,reserva,864.252,OK,reserva confirmada
+1792081503639,N1-C1,consulta,600.542,OK,
+1792081503916,N1-C8,reserva,535.043,OK,reserva confirmada
+1792081504223,N1-C3,consulta,764.568,OK,
+1792081504337,N1-C4,consulta,376.876,OK,
+1792081505450,N1-C2,consulta,600.267,OK,
+1792081505862,N1-C6,reserva,391.313,OK,reserva confirmada
+1792081506167,N1-C7,reserva,622.756,OK,reserva confirmada
+1792081506406,N1-C5,reserva,854.913,OK,reserva confirmada
+1792081506695,N1-C1,consulta,656.463,OK,
+1792081506981,N1-C8,reserva,599.055,OK,reserva confirmada
+1792081507195,N1-C3,consulta,737.137,OK,
+1792081507307,N1-C4,consulta,347.567,OK,
+1792081508223,N1-C2,consulta,374.370,OK,
+1792081508937,N1-C6,reserva,465.637,OK,reserva confirmada
+1792081509341,N1-C5,reserva,789.512,OK,reserva confirmada
+1792081509649,N1-C7,reserva,1104.612,OK,reserva confirmada
+1792081509957,N1-C1,consulta,920.052,OK,
+1792081510161,N1-C8,reserva,779.274,OK,reserva confirmada
+1792081510471,N1-C3,consulta,1012.846,OK,
+1792081510570,N1-C4,consulta,610.334,OK,
+1792081511108,N1-C2,consulta,257.872,OK,
+1792081511899,N1-C6,reserva,427.287,OK,reserva confirmada
+1792081512208,N1-C7,reserva,663.658,OK,reserva confirmada
+1792081512511,N1-C5,reserva,959.656,OK,reserva confirmada
+1792081512726,N1-C1,consulta,687.959,OK,
+1792081512994,N1-C8,reserva,611.940,OK,reserva confirmada
+1792081513336,N1-C3,consulta,877.781,OK,
+1792081513364,N1-C4,consulta,404.259,OK,
+1792081514085,N1-C2,consulta,235.559,OK,
+1792081514901,N1-C6,reserva,429.896,OK,reserva confirmada
+1792081515186,N1-C7,reserva,641.251,OK,reserva confirmada
+1792081515482,N1-C5,reserva,930.620,OK,reserva confirmada
+1792081515702,N1-C1,consulta,663.964,OK,
+1792081516003,N1-C8,reserva,621.693,OK,reserva confirmada
+1792081516720,N1-C3,consulta,1262.539,OK,
+1792081516915,N1-C4,consulta,955.356,OK,
+1792081517239,N1-C2,consulta,389.948,OK,
+1792081517944,N1-C6,reserva,473.337,OK,reserva confirmada
+1792081518250,N1-C5,reserva,699.731,OK,reserva confirmada
+1792081518558,N1-C7,reserva,1014.184,OK,reserva confirmada
+1792081518762,N1-C1,consulta,723.790,OK,
+1792081519070,N1-C8,reserva,688.756,OK,reserva confirmada
+1792081519377,N1-C3,consulta,919.060,OK,
+1792081519494,N1-C4,consulta,534.649,OK,
+1792081520196,N1-C2,consulta,347.032,OK,
+1792081520918,N1-C6,reserva,447.408,OK,reserva confirmada
+1792081521245,N1-C7,reserva,700.901,OK,reserva confirmada
+1792081521532,N1-C5,reserva,980.739,OK,reserva confirmada
+1792081521838,N1-C1,consulta,800.525,OK,
+1792081522147,N1-C8,reserva,765.012,OK,reserva confirmada
+1792081522363,N1-C3,consulta,904.789,OK,
+1792081522560,N1-C4,consulta,601.068,OK,
+1792081523174,N1-C2,consulta,324.857,OK,
+1792081523984,N1-C6,reserva,513.979,OK,reserva confirmada
+1792081524293,N1-C5,reserva,742.050,OK,reserva confirmada
+1792081524601,N1-C7,reserva,1056.577,OK,reserva confirmada
+1792081524911,N1-C1,consulta,873.217,OK,
+1792081525143,N1-C8,reserva,761.963,OK,reserva confirmada
+1792081525328,N1-C3,consulta,870.440,OK,
+1792081525531,N1-C4,consulta,570.841,OK,
+1792081526148,N1-C2,consulta,298.414,OK,
+1792081526955,N1-C6,reserva,483.869,OK,reserva confirmada
+1792081527262,N1-C5,reserva,711.292,OK,reserva confirmada
+1792081527569,N1-C7,reserva,1025.204,OK,reserva confirmada
+1792081527962,N1-C1,consulta,924.295,OK,
+1792081528287,N1-C8,reserva,905.302,OK,reserva confirmada
+1792081528509,N1-C3,consulta,1051.425,OK,
+1792081528701,N1-C4,consulta,740.695,OK,
+1792081529122,N1-C2,consulta,272.527,OK,
+1792081529925,N1-C6,reserva,454.399,OK,reserva confirmada
+1792081530231,N1-C5,reserva,680.620,OK,reserva confirmada
+1792081530473,N1-C7,reserva,928.555,OK,reserva confirmada
+1792081530750,N1-C1,consulta,712.738,OK,
+1792081531045,N1-C8,reserva,663.140,OK,reserva confirmada
+1792081531158,N1-C3,consulta,700.184,OK,
+1792081531365,N1-C4,consulta,405.025,OK,
+1792081532201,N1-C2,consulta,352.043,OK,
+1792081532797,N1-C6,reserva,325.938,OK,reserva confirmada
+1792081533298,N1-C7,reserva,753.782,OK,reserva confirmada
+1792081533504,N1-C5,reserva,952.945,OK,reserva confirmada
+1792081533824,N1-C1,consulta,785.638,OK,
+1792081534123,N1-C8,reserva,741.340,OK,reserva confirmada
+1792081534330,N1-C3,consulta,871.452,OK,
+1792081534548,N1-C4,consulta,588.780,OK,
+1792081535249,N1-C2,consulta,399.660,OK,
+1792081536064,N1-C6,reserva,592.356,OK,reserva confirmada
+1792081536279,N1-C7,reserva,734.135,OK,reserva confirmada
+1792081536581,N1-C5,reserva,1029.807,OK,reserva confirmada
+1792081537102,N1-C1,consulta,1064.334,OK,
+1792081537400,N1-C8,reserva,1019.283,OK,reserva confirmada
+1792081537616,N1-C3,consulta,1158.025,OK,
+1792081537820,N1-C4,consulta,860.475,OK,
+1792081538220,N1-C2,consulta,370.326,OK,
+1792081539039,N1-C6,reserva,568.405,OK,reserva confirmada
+1792081539346,N1-C7,reserva,802.121,OK,reserva confirmada
+1792081539551,N1-C5,reserva,999.429,OK,reserva confirmada
+1792081539771,N1-C1,consulta,733.330,OK,
+1792081540166,N1-C8,reserva,784.430,OK,reserva confirmada
+1792081540370,N1-C3,consulta,911.908,OK,
+1792081540576,N1-C4,consulta,615.767,OK,

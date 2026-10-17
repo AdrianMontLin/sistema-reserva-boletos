@@ -1,6 +1,6 @@
 {
-  "guardado": "2026-10-14T15:42:51-05:00",
-  "siguiente_reserva": 8,
+  "guardado": "2026-10-15T06:53:30-05:00",
+  "siguiente_reserva": 10,
   "eventos": [
     {
       "id": "E1",
@@ -37,8 +37,8 @@
           "id": "E2-2",
           "fecha": "2026-10-17",
           "asientos_totales": 100,
-          "asientos_libres": 98,
-          "asientos_ocupados": 2
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
         }
       ]
     },
@@ -50,15 +50,15 @@
           "id": "E3-1",
           "fecha": "2026-10-04",
           "asientos_totales": 100,
-          "asientos_libres": 100,
-          "asientos_ocupados": 0
+          "asientos_libres": 97,
+          "asientos_ocupados": 3
         },
         {
           "id": "E3-2",
           "fecha": "2026-10-18",
           "asientos_totales": 100,
-          "asientos_libres": 100,
-          "asientos_ocupados": 0
+          "asientos_libres": 96,
+          "asientos_ocupados": 4
         }
       ]
     },
@@ -150,8 +150,8 @@
           "id": "E8-1",
           "fecha": "2026-10-09",
           "asientos_totales": 100,
-          "asientos_libres": 100,
-          "asientos_ocupados": 0
+          "asientos_libres": 97,
+          "asientos_ocupados": 3
         },
         {
           "id": "E8-2",
@@ -170,15 +170,15 @@
           "id": "E9-1",
           "fecha": "2026-10-10",
           "asientos_totales": 100,
-          "asientos_libres": 96,
-          "asientos_ocupados": 4
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
         },
         {
           "id": "E9-2",
           "fecha": "2026-10-24",
           "asientos_totales": 100,
-          "asientos_libres": 97,
-          "asientos_ocupados": 3
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
         }
       ]
     },
@@ -297,8 +297,8 @@
           "id": "E15-2",
           "fecha": "2026-10-16",
           "asientos_totales": 100,
-          "asientos_libres": 100,
-          "asientos_ocupados": 0
+          "asientos_libres": 98,
+          "asientos_ocupados": 2
         }
       ]
     },
@@ -317,8 +317,8 @@
           "id": "E16-2",
           "fecha": "2026-10-17",
           "asientos_totales": 100,
-          "asientos_libres": 100,
-          "asientos_ocupados": 0
+          "asientos_libres": 96,
+          "asientos_ocupados": 4
         }
       ]
     },
@@ -337,8 +337,8 @@
           "id": "E17-2",
           "fecha": "2026-10-18",
           "asientos_totales": 100,
-          "asientos_libres": 96,
-          "asientos_ocupados": 4
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
         }
       ]
     },
@@ -397,8 +397,8 @@
           "id": "E20-2",
           "fecha": "2026-10-21",
           "asientos_totales": 100,
-          "asientos_libres": 100,
-          "asientos_ocupados": 0
+          "asientos_libres": 94,
+          "asientos_ocupados": 6
         }
       ]
     },
@@ -488,8 +488,8 @@
           "id": "E27-1",
           "fecha": "2026-10-26",
           "asientos_totales": 100,
-          "asientos_libres": 100,
-          "asientos_ocupados": 0
+          "asientos_libres": 96,
+          "asientos_ocupados": 4
         }
       ]
     },
@@ -553,8 +553,8 @@
           "id": "E32-1",
           "fecha": "2026-10-13",
           "asientos_totales": 100,
-          "asientos_libres": 100,
-          "asientos_ocupados": 0
+          "asientos_libres": 99,
+          "asientos_ocupados": 1
         }
       ]
     },
@@ -605,8 +605,8 @@
           "id": "E36-1",
           "fecha": "2026-10-25",
           "asientos_totales": 100,
-          "asientos_libres": 97,
-          "asientos_ocupados": 3
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
         }
       ]
     },
@@ -709,8 +709,8 @@
           "id": "E44-1",
           "fecha": "2026-10-21",
           "asientos_totales": 100,
-          "asientos_libres": 96,
-          "asientos_ocupados": 4
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
         }
       ]
     },
@@ -748,8 +748,8 @@
           "id": "E47-1",
           "fecha": "2026-10-02",
           "asientos_totales": 100,
-          "asientos_libres": 98,
-          "asientos_ocupados": 2
+          "asientos_libres": 100,
+          "asientos_ocupados": 0
         }
       ]
     },
@@ -796,58 +796,74 @@
   "reservas": [
     {
       "id": "R1",
-      "id_evento": "E9",
-      "id_ocurrencia": "E9-2",
+      "id_evento": "E8",
+      "id_ocurrencia": "E8-1",
       "id_cliente": "N1-C3",
       "num_asientos": 3,
       "estado": "confirmada"
     },
     {
       "id": "R2",
-      "id_evento": "E2",
-      "id_ocurrencia": "E2-2",
+      "id_evento": "E20",
+      "id_ocurrencia": "E20-2",
       "id_cliente": "N1-C3",
-      "num_asientos": 2,
+      "num_asientos": 4,
       "estado": "confirmada"
     },
     {
       "id": "R3",
-      "id_evento": "E47",
-      "id_ocurrencia": "E47-1",
+      "id_evento": "E15",
+      "id_ocurrencia": "E15-2",
       "id_cliente": "N1-C3",
       "num_asientos": 2,
       "estado": "confirmada"
     },
     {
       "id": "R4",
-      "id_evento": "E17",
-      "id_ocurrencia": "E17-2",
+      "id_evento": "E16",
+      "id_ocurrencia": "E16-2",
       "id_cliente": "N1-C3",
       "num_asientos": 4,
       "estado": "confirmada"
     },
     {
       "id": "R5",
-      "id_evento": "E44",
-      "id_ocurrencia": "E44-1",
+      "id_evento": "E3",
+      "id_ocurrencia": "E3-1",
       "id_cliente": "N1-C3",
-      "num_asientos": 4,
+      "num_asientos": 3,
       "estado": "confirmada"
     },
     {
       "id": "R6",
-      "id_evento": "E9",
-      "id_ocurrencia": "E9-1",
+      "id_evento": "E20",
+      "id_ocurrencia": "E20-2",
+      "id_cliente": "N1-C3",
+      "num_asientos": 2,
+      "estado": "confirmada"
+    },
+    {
+      "id": "R7",
+      "id_evento": "E27",
+      "id_ocurrencia": "E27-1",
       "id_cliente": "N1-C3",
       "num_asientos": 4,
       "estado": "confirmada"
     },
     {
-      "id": "R7",
-      "id_evento": "E36",
-      "id_ocurrencia": "E36-1",
+      "id": "R8",
+      "id_evento": "E3",
+      "id_ocurrencia": "E3-2",
       "id_cliente": "N1-C3",
-      "num_asientos": 3,
+      "num_asientos": 4,
+      "estado": "confirmada"
+    },
+    {
+      "id": "R9",
+      "id_evento": "E32",
+      "id_ocurrencia": "E32-1",
+      "id_cliente": "N1-C3",
+      "num_asientos": 1,
       "estado": "confirmada"
     }
   ]
